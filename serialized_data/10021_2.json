@@ -1,0 +1,5445 @@
+[
+    {
+        "Time": 2.742857142857143,
+        "Notes": [
+            {
+                "holdTime": 1.3714285714285714,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3h[1:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 2.742857142857143,
+                "density": 0,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 4.114285714285714,
+        "Notes": [
+            {
+                "holdTime": 1.3714285714285714,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4h[1:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 4.114285714285714,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 5.485714285714286,
+        "Notes": [
+            {
+                "holdTime": 1.3714285714285714,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "5h[1:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": " ",
+                "time": 5.485714285714286,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 6.857142857142858,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 6.857142857142858,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 8.22857142857143,
+        "Notes": [
+            {
+                "holdTime": 1.3714285714285714,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6h[1:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 8.22857142857143,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 9.600000000000001,
+        "Notes": [
+            {
+                "holdTime": 1.3714285714285714,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "5h[1:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": " ",
+                "time": 9.600000000000001,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 10.971428571428573,
+        "Notes": [
+            {
+                "holdTime": 1.3714285714285714,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4h[1:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 10.971428571428573,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 12.342857142857145,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 12.342857142857145,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 13.714285714285717,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 13.714285714285717,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 14.05714285714286,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 14.05714285714286,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 14.400000000000004,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 14.400000000000004,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 14.400000000000004,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 15.08571428571429,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 15.08571428571429,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 15.428571428571434,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 15.428571428571434,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 15.771428571428578,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 15.771428571428578,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 15.771428571428578,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 16.457142857142863,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 16.457142857142863,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 16.800000000000004,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 16.800000000000004,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 17.142857142857146,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 17.142857142857146,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 17.485714285714288,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 17.485714285714288,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 17.82857142857143,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 17.82857142857143,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 18.17142857142857,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 18.17142857142857,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 18.514285714285712,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 18.514285714285712,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 18.514285714285712,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 19.199999999999996,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 19.199999999999996,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 19.542857142857137,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 19.542857142857137,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 19.88571428571428,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 19.88571428571428,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 19.88571428571428,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 20.571428571428562,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 20.571428571428562,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 20.914285714285704,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 20.914285714285704,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 21.257142857142846,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 21.257142857142846,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 21.257142857142846,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 21.94285714285713,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 21.94285714285713,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 22.28571428571427,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 22.28571428571427,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 22.628571428571412,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 22.628571428571412,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 22.971428571428554,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 22.971428571428554,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 23.314285714285695,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 23.314285714285695,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 23.314285714285695,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 23.657142857142837,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 23.657142857142837,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 23.657142857142837,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 23.99999999999998,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 23.99999999999998,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 23.99999999999998,
+                "density": 7,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 24.685714285714262,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 24.685714285714262,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 4
+            }
+        ]
+    },
+    {
+        "Time": 25.37142857142855,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 25.37142857142855,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 26.057142857142836,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 26.057142857142836,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 26.742857142857122,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "5",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": " ",
+                "time": 26.742857142857122,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 27.42857142857141,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 27.42857142857141,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 27.77142857142855,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 27.77142857142855,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 28.114285714285693,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 28.114285714285693,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 28.114285714285693,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 28.799999999999976,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 28.799999999999976,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 29.142857142857117,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 29.142857142857117,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 29.48571428571426,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "5",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": " ",
+                "time": 29.48571428571426,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 29.48571428571426,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 30.171428571428542,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 30.171428571428542,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 30.85714285714283,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "5",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": " ",
+                "time": 30.85714285714283,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 31.542857142857116,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 31.542857142857116,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 32.2285714285714,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 32.2285714285714,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 32.91428571428568,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 32.91428571428568,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 33.257142857142824,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 33.257142857142824,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 33.599999999999966,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "5",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": " ",
+                "time": 33.599999999999966,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 33.599999999999966,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 34.28571428571425,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 34.28571428571425,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 34.62857142857139,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 34.62857142857139,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 34.97142857142853,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 34.97142857142853,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 34.97142857142853,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 35.657142857142816,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 35.657142857142816,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 36.3428571428571,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 36.3428571428571,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 37.02857142857138,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 37.02857142857138,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 37.714285714285666,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 37.714285714285666,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 38.39999999999995,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 38.39999999999995,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 38.74285714285709,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 38.74285714285709,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 39.08571428571423,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 39.08571428571423,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 39.08571428571423,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 39.771428571428515,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 39.771428571428515,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 40.11428571428566,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 40.11428571428566,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 40.4571428571428,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 40.4571428571428,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 40.4571428571428,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 41.14285714285708,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 41.14285714285708,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 41.828571428571365,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 41.828571428571365,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 42.51428571428565,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 42.51428571428565,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 43.19999999999993,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 43.19999999999993,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 43.885714285714215,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 43.885714285714215,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 44.22857142857136,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 44.22857142857136,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 44.5714285714285,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 44.5714285714285,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 44.5714285714285,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 45.25714285714278,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 45.25714285714278,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 45.25714285714278,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 45.59999999999992,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 45.59999999999992,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 45.59999999999992,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 45.942857142857065,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 45.942857142857065,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 45.942857142857065,
+                "density": 7,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 46.62857142857135,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "E3",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": "E",
+                "time": 46.62857142857135,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 4
+            }
+        ]
+    },
+    {
+        "Time": 47.31428571428563,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "B3",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": "B",
+                "time": 47.31428571428563,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 47.999999999999915,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "B4",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": "B",
+                "time": 47.999999999999915,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 49.37142857142849,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "E7",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": "E",
+                "time": 49.37142857142849,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 50.05714285714277,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "B6",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": "B",
+                "time": 50.05714285714277,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 50.742857142857055,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "B5",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": "B",
+                "time": 50.742857142857055,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 52.11428571428563,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "B2",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": "B",
+                "time": 52.11428571428563,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 52.79999999999991,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "B1",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": "B",
+                "time": 52.79999999999991,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 53.485714285714195,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "B8",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": "B",
+                "time": 53.485714285714195,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 54.17142857142848,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "B7",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": "B",
+                "time": 54.17142857142848,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 54.85714285714276,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "B6",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": "B",
+                "time": 54.85714285714276,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 55.542857142857045,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "B5",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": "B",
+                "time": 55.542857142857045,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 56.22857142857133,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "C1",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": "C",
+                "time": 56.22857142857133,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 57.5999999999999,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8<5[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 57.5999999999999,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 58.971428571428476,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4>1[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 58.971428571428476,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 4
+            }
+        ]
+    },
+    {
+        "Time": 60.34285714285705,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8-4[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 60.34285714285705,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 4
+            }
+        ]
+    },
+    {
+        "Time": 61.71428571428562,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 61.71428571428562,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 62.057142857142765,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 62.057142857142765,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 62.399999999999906,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 62.399999999999906,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 62.399999999999906,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 63.08571428571419,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1-6[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 63.08571428571419,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 3
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2-5[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 63.08571428571419,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 64.45714285714276,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7-4[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 64.45714285714276,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 3
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8-3[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 64.45714285714276,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 65.82857142857132,
+        "Notes": [
+            {
+                "holdTime": 1.3714285714285714,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": true,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "C1fh[1:1]",
+                "noteType": "TouchHold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": "C",
+                "time": 65.82857142857132,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 68.57142857142846,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 68.57142857142846,
+                "density": 0,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 68.9142857142856,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 68.9142857142856,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 69.25714285714274,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 69.25714285714274,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 69.25714285714274,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 69.59999999999988,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 69.59999999999988,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 69.59999999999988,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 69.94285714285702,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 69.94285714285702,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 70.28571428571416,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 70.28571428571416,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 70.6285714285713,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 70.6285714285713,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 70.6285714285713,
+                "density": 7,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 71.31428571428559,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 71.31428571428559,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 71.65714285714273,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 71.65714285714273,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 71.99999999999987,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 71.99999999999987,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 71.99999999999987,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 72.34285714285701,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 72.34285714285701,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 72.34285714285701,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 72.68571428571416,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 72.68571428571416,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 73.0285714285713,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 73.0285714285713,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 73.37142857142844,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 73.37142857142844,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 73.37142857142844,
+                "density": 7,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 74.05714285714272,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 74.05714285714272,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 74.742857142857,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 74.742857142857,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 75.42857142857129,
+        "Notes": [
+            {
+                "holdTime": 0.6857142857142857,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "5h[2:1]",
+                "noteType": "Hold",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": " ",
+                "time": 75.42857142857129,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 76.11428571428557,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 76.11428571428557,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 76.79999999999986,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 76.79999999999986,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "5",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": " ",
+                "time": 76.79999999999986,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 77.48571428571414,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4-1[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 77.48571428571414,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "5-8[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 5,
+                "touchArea": " ",
+                "time": 77.48571428571414,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 78.8571428571427,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 78.8571428571427,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 3
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 78.8571428571427,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 79.54285714285699,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 79.54285714285699,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 79.88571428571413,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 79.88571428571413,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 80.22857142857127,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 80.22857142857127,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 80.22857142857127,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 80.57142857142841,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 80.57142857142841,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 80.57142857142841,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 80.91428571428555,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 80.91428571428555,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 81.2571428571427,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 81.2571428571427,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 81.59999999999984,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 81.59999999999984,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 81.59999999999984,
+                "density": 7,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 82.28571428571412,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 82.28571428571412,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 82.62857142857126,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 82.62857142857126,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 82.9714285714284,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 82.9714285714284,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 82.9714285714284,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 83.31428571428555,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 83.31428571428555,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 83.31428571428555,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 83.65714285714269,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 83.65714285714269,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 83.99999999999983,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 83.99999999999983,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 84.34285714285697,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 84.34285714285697,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 84.34285714285697,
+                "density": 7,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 85.02857142857125,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 85.02857142857125,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 85.3714285714284,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 85.3714285714284,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 85.71428571428554,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 85.71428571428554,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 86.05714285714268,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 86.05714285714268,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 86.39999999999982,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 86.39999999999982,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 86.74285714285696,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 86.74285714285696,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 87.0857142857141,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 87.0857142857141,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 87.42857142857125,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 87.42857142857125,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 87.77142857142839,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 87.77142857142839,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 87.77142857142839,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 88.11428571428553,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 88.11428571428553,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 88.11428571428553,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 88.45714285714267,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": true,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 88.45714285714267,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            },
+            {
+                "holdTime": 0,
+                "isBreak": true,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 88.45714285714267,
+                "density": 7,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 89.14285714285695,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 89.14285714285695,
+                "density": 6,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 89.82857142857124,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 89.82857142857124,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 90.51428571428552,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 90.51428571428552,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 90.85714285714266,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 90.85714285714266,
+                "density": 2,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 91.1999999999998,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 91.1999999999998,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "4",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 4,
+                "touchArea": " ",
+                "time": 91.1999999999998,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 91.88571428571409,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 91.88571428571409,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 92.22857142857123,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 92.22857142857123,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 92.57142857142837,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "5",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 5,
+                "touchArea": " ",
+                "time": 92.57142857142837,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "6",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 6,
+                "touchArea": " ",
+                "time": 92.57142857142837,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 93.25714285714265,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 93.25714285714265,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 93.5999999999998,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "3",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 3,
+                "touchArea": " ",
+                "time": 93.5999999999998,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 93.94285714285694,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 93.94285714285694,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 94.28571428571408,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 94.28571428571408,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 94.62857142857122,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 94.62857142857122,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 94.97142857142836,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 94.97142857142836,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 95.3142857142855,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 95.3142857142855,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 95.3142857142855,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 95.99999999999979,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 95.99999999999979,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 96.34285714285693,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 96.34285714285693,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 96.68571428571407,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 96.68571428571407,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 0
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 96.68571428571407,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 97.37142857142835,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 97.37142857142835,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 2
+            }
+        ]
+    },
+    {
+        "Time": 97.7142857142855,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 97.7142857142855,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 98.05714285714264,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 98.05714285714264,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 98.05714285714264,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 98.74285714285692,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 98.74285714285692,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 99.08571428571406,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 99.08571428571406,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 99.4285714285712,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 99.4285714285712,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 99.77142857142834,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "8",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": " ",
+                "time": 99.77142857142834,
+                "density": 3,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 100.11428571428549,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 100.11428571428549,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    },
+    {
+        "Time": 100.45714285714263,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "1",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 1,
+                "touchArea": " ",
+                "time": 100.45714285714263,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 0
+            }
+        ]
+    },
+    {
+        "Time": 100.79999999999977,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 100.79999999999977,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 1
+            },
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": true,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7",
+                "noteType": "Tap",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 100.79999999999977,
+                "density": 5,
+                "sweepAllowed": false,
+                "multiPressCount": 2,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 101.48571428571405,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "2-5[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 2,
+                "touchArea": " ",
+                "time": 101.48571428571405,
+                "density": 4,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 102.85714285714262,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": false,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "7-4[2:1]",
+                "noteType": "Slide",
+                "slideStartTime": 0.34285714285714164,
+                "slideTime": 0.6857142857142857,
+                "startPosition": 7,
+                "touchArea": " ",
+                "time": 102.85714285714262,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 3
+            }
+        ]
+    },
+    {
+        "Time": 104.22857142857119,
+        "Notes": [
+            {
+                "holdTime": 0,
+                "isBreak": false,
+                "isEx": false,
+                "isFakeRotate": false,
+                "isForceStar": false,
+                "isHanabi": true,
+                "isSlideBreak": false,
+                "isSlideNoHead": false,
+                "noteContent": "C1f",
+                "noteType": "Touch",
+                "slideStartTime": 0,
+                "slideTime": 0,
+                "startPosition": 8,
+                "touchArea": "C",
+                "time": 104.22857142857119,
+                "density": 1,
+                "sweepAllowed": false,
+                "multiPressCount": 1,
+                "displacement": 1
+            }
+        ]
+    }
+]

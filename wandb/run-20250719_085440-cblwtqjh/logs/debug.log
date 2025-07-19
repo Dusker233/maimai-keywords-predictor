@@ -1,0 +1,426 @@
+2025-07-19 08:54:40,772 INFO    MainThread:6087 [wandb_setup.py:_flush():80] Current SDK version is 0.21.0
+2025-07-19 08:54:40,772 INFO    MainThread:6087 [wandb_setup.py:_flush():80] Configure stats pid to 6087
+2025-07-19 08:54:40,773 INFO    MainThread:6087 [wandb_setup.py:_flush():80] Loading settings from /home/dusker/.config/wandb/settings
+2025-07-19 08:54:40,773 INFO    MainThread:6087 [wandb_setup.py:_flush():80] Loading settings from /mnt/f/maimai/wandb/settings
+2025-07-19 08:54:40,773 INFO    MainThread:6087 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-07-19 08:54:40,773 INFO    MainThread:6087 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /mnt/f/maimai/wandb/run-20250719_085440-cblwtqjh/logs/debug.log
+2025-07-19 08:54:40,774 INFO    MainThread:6087 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /mnt/f/maimai/wandb/run-20250719_085440-cblwtqjh/logs/debug-internal.log
+2025-07-19 08:54:40,774 INFO    MainThread:6087 [wandb_init.py:init():830] calling init triggers
+2025-07-19 08:54:40,774 INFO    MainThread:6087 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'batch_size': 32, 'epochs': 1000, 'early_stopping_patience': 10, 'target_loss': 0.01, 'model_name': 'LSTMWithAttention', '_wandb': {}}
+2025-07-19 08:54:40,774 INFO    MainThread:6087 [wandb_init.py:init():871] starting backend
+2025-07-19 08:54:41,295 INFO    MainThread:6087 [wandb_init.py:init():874] sending inform_init request
+2025-07-19 08:54:41,323 INFO    MainThread:6087 [wandb_init.py:init():882] backend started and connected
+2025-07-19 08:54:41,325 INFO    MainThread:6087 [wandb_init.py:init():953] updated telemetry
+2025-07-19 08:54:41,343 INFO    MainThread:6087 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-07-19 08:54:42,368 INFO    MainThread:6087 [wandb_init.py:init():1029] starting run threads in backend
+2025-07-19 08:54:42,585 INFO    MainThread:6087 [wandb_run.py:_console_start():2458] atexit reg
+2025-07-19 08:54:42,585 INFO    MainThread:6087 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-07-19 08:54:42,586 INFO    MainThread:6087 [wandb_run.py:_redirect():2375] Wrapping output streams.
+2025-07-19 08:54:42,586 INFO    MainThread:6087 [wandb_run.py:_redirect():2398] Redirects installed.
+2025-07-19 08:54:42,625 INFO    MainThread:6087 [wandb_init.py:init():1075] run started, returning control to user process
+2025-07-19 08:54:42,625 INFO    MainThread:6087 [wandb_watch.py:_watch():70] Watching
+2025-07-19 09:07:28,123 INFO    MsgRouterThr:6087 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-07-19 09:07:28,661 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,693 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,701 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,709 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,717 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,726 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,740 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,749 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,757 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,765 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,779 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,789 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-07-19 09:07:28,799 ERROR   MainThread:6087 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2385, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 398, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 456, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1566, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 170, in send_record_publish
+    self.send_server_request(server_req)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 150, in send_server_request
+    self._send_message(msg)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 147, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 126, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe

@@ -1,0 +1,6 @@
+未找到已保存的模型，从头开始训练
+  0%|                                                                                                              | 0/1000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/mnt/f/maimai/train.py", line 239, in <module>
+    raw_losses[:, tag_idx].cpu().numpy()
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.

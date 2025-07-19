@@ -1,0 +1,457 @@
+加载已保存的模型: trained_models/best_model.pth
+Epoch [1/1000], Loss: 0.3778, Train Acc: 0.8419, Test Acc: 0.8456
+最好的模型已保存: trained_models/best_model.pth
+Epoch [2/1000], Loss: 0.3735, Train Acc: 0.8420, Test Acc: 0.8456
+最好的模型已保存: trained_models/best_model.pth
+Epoch [3/1000], Loss: 0.3739, Train Acc: 0.8423, Test Acc: 0.8472
+Epoch [4/1000], Loss: 0.3720, Train Acc: 0.8441, Test Acc: 0.8449
+最好的模型已保存: trained_models/best_model.pth
+Epoch [5/1000], Loss: 0.3727, Train Acc: 0.8428, Test Acc: 0.8450
+Epoch [6/1000], Loss: 0.3741, Train Acc: 0.8411, Test Acc: 0.8427
+Epoch [7/1000], Loss: 0.3728, Train Acc: 0.8439, Test Acc: 0.8459
+Epoch [8/1000], Loss: 0.3712, Train Acc: 0.8434, Test Acc: 0.8472
+最好的模型已保存: trained_models/best_model.pth
+Epoch [9/1000], Loss: 0.3720, Train Acc: 0.8438, Test Acc: 0.8449
+Epoch [10/1000], Loss: 0.3801, Train Acc: 0.8382, Test Acc: 0.8452
+模型已保存: trained_models/model_epoch_10.pth
+Epoch [11/1000], Loss: 0.3705, Train Acc: 0.8441, Test Acc: 0.8450
+最好的模型已保存: trained_models/best_model.pth
+Epoch [12/1000], Loss: 0.3700, Train Acc: 0.8442, Test Acc: 0.8454
+最好的模型已保存: trained_models/best_model.pth
+Epoch [13/1000], Loss: 0.3700, Train Acc: 0.8434, Test Acc: 0.8443
+最好的模型已保存: trained_models/best_model.pth
+Epoch [14/1000], Loss: 0.3689, Train Acc: 0.8441, Test Acc: 0.8452
+最好的模型已保存: trained_models/best_model.pth
+Epoch [15/1000], Loss: 0.3679, Train Acc: 0.8454, Test Acc: 0.8459
+最好的模型已保存: trained_models/best_model.pth
+Epoch [16/1000], Loss: 0.3686, Train Acc: 0.8437, Test Acc: 0.8465
+Epoch [17/1000], Loss: 0.3666, Train Acc: 0.8457, Test Acc: 0.8452
+最好的模型已保存: trained_models/best_model.pth
+Epoch [18/1000], Loss: 0.3683, Train Acc: 0.8448, Test Acc: 0.8461
+Epoch [19/1000], Loss: 0.3663, Train Acc: 0.8455, Test Acc: 0.8431
+最好的模型已保存: trained_models/best_model.pth
+Epoch [20/1000], Loss: 0.3667, Train Acc: 0.8449, Test Acc: 0.8456
+模型已保存: trained_models/model_epoch_20.pth
+Epoch [21/1000], Loss: 0.3675, Train Acc: 0.8454, Test Acc: 0.8441
+Epoch [22/1000], Loss: 0.3681, Train Acc: 0.8455, Test Acc: 0.8438
+Epoch [23/1000], Loss: 0.3665, Train Acc: 0.8464, Test Acc: 0.8443
+Epoch [24/1000], Loss: 0.3663, Train Acc: 0.8460, Test Acc: 0.8429
+最好的模型已保存: trained_models/best_model.pth
+Epoch [25/1000], Loss: 0.3647, Train Acc: 0.8465, Test Acc: 0.8458
+最好的模型已保存: trained_models/best_model.pth
+Epoch [26/1000], Loss: 0.3641, Train Acc: 0.8471, Test Acc: 0.8425
+最好的模型已保存: trained_models/best_model.pth
+Epoch [27/1000], Loss: 0.3648, Train Acc: 0.8458, Test Acc: 0.8443
+Epoch [28/1000], Loss: 0.3656, Train Acc: 0.8453, Test Acc: 0.8438
+Epoch [29/1000], Loss: 0.3646, Train Acc: 0.8461, Test Acc: 0.8414
+Epoch [30/1000], Loss: 0.3643, Train Acc: 0.8457, Test Acc: 0.8458
+模型已保存: trained_models/model_epoch_30.pth
+Epoch [31/1000], Loss: 0.3680, Train Acc: 0.8442, Test Acc: 0.8432
+Epoch [32/1000], Loss: 0.3629, Train Acc: 0.8461, Test Acc: 0.8431
+最好的模型已保存: trained_models/best_model.pth
+Epoch [33/1000], Loss: 0.3628, Train Acc: 0.8465, Test Acc: 0.8470
+最好的模型已保存: trained_models/best_model.pth
+Epoch [34/1000], Loss: 0.3612, Train Acc: 0.8472, Test Acc: 0.8431
+最好的模型已保存: trained_models/best_model.pth
+Epoch [35/1000], Loss: 0.3632, Train Acc: 0.8456, Test Acc: 0.8461
+Epoch [36/1000], Loss: 0.3646, Train Acc: 0.8460, Test Acc: 0.8434
+Epoch [37/1000], Loss: 0.3615, Train Acc: 0.8478, Test Acc: 0.8432
+Epoch [38/1000], Loss: 0.3648, Train Acc: 0.8467, Test Acc: 0.8425
+Epoch [39/1000], Loss: 0.3639, Train Acc: 0.8479, Test Acc: 0.8447
+Epoch [40/1000], Loss: 0.3633, Train Acc: 0.8463, Test Acc: 0.8402
+模型已保存: trained_models/model_epoch_40.pth
+Epoch [41/1000], Loss: 0.3613, Train Acc: 0.8468, Test Acc: 0.8432
+Epoch [42/1000], Loss: 0.3596, Train Acc: 0.8479, Test Acc: 0.8449
+最好的模型已保存: trained_models/best_model.pth
+Epoch [43/1000], Loss: 0.3584, Train Acc: 0.8480, Test Acc: 0.8443
+最好的模型已保存: trained_models/best_model.pth
+Epoch [44/1000], Loss: 0.3590, Train Acc: 0.8485, Test Acc: 0.8447
+Epoch [45/1000], Loss: 0.3577, Train Acc: 0.8486, Test Acc: 0.8441
+最好的模型已保存: trained_models/best_model.pth
+Epoch [46/1000], Loss: 0.3580, Train Acc: 0.8486, Test Acc: 0.8425
+Epoch [47/1000], Loss: 0.3579, Train Acc: 0.8484, Test Acc: 0.8420
+Epoch [48/1000], Loss: 0.3568, Train Acc: 0.8495, Test Acc: 0.8429
+最好的模型已保存: trained_models/best_model.pth
+Epoch [49/1000], Loss: 0.3562, Train Acc: 0.8497, Test Acc: 0.8416
+最好的模型已保存: trained_models/best_model.pth
+Epoch [50/1000], Loss: 0.3558, Train Acc: 0.8491, Test Acc: 0.8427
+模型已保存: trained_models/model_epoch_50.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [51/1000], Loss: 0.3553, Train Acc: 0.8504, Test Acc: 0.8441
+最好的模型已保存: trained_models/best_model.pth
+Epoch [52/1000], Loss: 0.3563, Train Acc: 0.8494, Test Acc: 0.8445
+Epoch [53/1000], Loss: 0.3581, Train Acc: 0.8491, Test Acc: 0.8422
+Epoch [54/1000], Loss: 0.3560, Train Acc: 0.8487, Test Acc: 0.8414
+Epoch [55/1000], Loss: 0.3561, Train Acc: 0.8485, Test Acc: 0.8441
+Epoch [56/1000], Loss: 0.3541, Train Acc: 0.8501, Test Acc: 0.8431
+最好的模型已保存: trained_models/best_model.pth
+Epoch [57/1000], Loss: 0.3533, Train Acc: 0.8509, Test Acc: 0.8418
+最好的模型已保存: trained_models/best_model.pth
+Epoch [58/1000], Loss: 0.3550, Train Acc: 0.8491, Test Acc: 0.8438
+Epoch [59/1000], Loss: 0.3538, Train Acc: 0.8490, Test Acc: 0.8432
+Epoch [60/1000], Loss: 0.3525, Train Acc: 0.8510, Test Acc: 0.8432
+模型已保存: trained_models/model_epoch_60.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [61/1000], Loss: 0.3522, Train Acc: 0.8508, Test Acc: 0.8422
+最好的模型已保存: trained_models/best_model.pth
+Epoch [62/1000], Loss: 0.3516, Train Acc: 0.8508, Test Acc: 0.8407
+最好的模型已保存: trained_models/best_model.pth
+Epoch [63/1000], Loss: 0.3523, Train Acc: 0.8500, Test Acc: 0.8427
+Epoch [64/1000], Loss: 0.3503, Train Acc: 0.8507, Test Acc: 0.8409
+最好的模型已保存: trained_models/best_model.pth
+Epoch [65/1000], Loss: 0.3517, Train Acc: 0.8509, Test Acc: 0.8402
+Epoch [66/1000], Loss: 0.3520, Train Acc: 0.8500, Test Acc: 0.8420
+Epoch [67/1000], Loss: 0.3509, Train Acc: 0.8503, Test Acc: 0.8425
+Epoch [68/1000], Loss: 0.3510, Train Acc: 0.8494, Test Acc: 0.8405
+Epoch [69/1000], Loss: 0.3490, Train Acc: 0.8507, Test Acc: 0.8404
+最好的模型已保存: trained_models/best_model.pth
+Epoch [70/1000], Loss: 0.3486, Train Acc: 0.8522, Test Acc: 0.8382
+模型已保存: trained_models/model_epoch_70.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [71/1000], Loss: 0.3483, Train Acc: 0.8509, Test Acc: 0.8413
+最好的模型已保存: trained_models/best_model.pth
+Epoch [72/1000], Loss: 0.3486, Train Acc: 0.8510, Test Acc: 0.8405
+Epoch [73/1000], Loss: 0.3495, Train Acc: 0.8512, Test Acc: 0.8387
+Epoch [74/1000], Loss: 0.3488, Train Acc: 0.8507, Test Acc: 0.8400
+Epoch [75/1000], Loss: 0.3479, Train Acc: 0.8522, Test Acc: 0.8380
+最好的模型已保存: trained_models/best_model.pth
+Epoch [76/1000], Loss: 0.3478, Train Acc: 0.8513, Test Acc: 0.8400
+最好的模型已保存: trained_models/best_model.pth
+Epoch [77/1000], Loss: 0.3491, Train Acc: 0.8502, Test Acc: 0.8400
+Epoch [78/1000], Loss: 0.3467, Train Acc: 0.8522, Test Acc: 0.8409
+最好的模型已保存: trained_models/best_model.pth
+Epoch [79/1000], Loss: 0.3491, Train Acc: 0.8508, Test Acc: 0.8389
+Epoch [80/1000], Loss: 0.3479, Train Acc: 0.8502, Test Acc: 0.8422
+模型已保存: trained_models/model_epoch_80.pth
+Epoch [81/1000], Loss: 0.3469, Train Acc: 0.8519, Test Acc: 0.8400
+Epoch [82/1000], Loss: 0.3492, Train Acc: 0.8510, Test Acc: 0.8364
+Epoch [83/1000], Loss: 0.3478, Train Acc: 0.8520, Test Acc: 0.8427
+Epoch [84/1000], Loss: 0.3445, Train Acc: 0.8525, Test Acc: 0.8405
+最好的模型已保存: trained_models/best_model.pth
+Epoch [85/1000], Loss: 0.3440, Train Acc: 0.8528, Test Acc: 0.8400
+最好的模型已保存: trained_models/best_model.pth
+Epoch [86/1000], Loss: 0.3432, Train Acc: 0.8528, Test Acc: 0.8407
+最好的模型已保存: trained_models/best_model.pth
+Epoch [87/1000], Loss: 0.3443, Train Acc: 0.8516, Test Acc: 0.8395
+Epoch [88/1000], Loss: 0.3426, Train Acc: 0.8537, Test Acc: 0.8409
+最好的模型已保存: trained_models/best_model.pth
+Epoch [89/1000], Loss: 0.3428, Train Acc: 0.8517, Test Acc: 0.8391
+Epoch [90/1000], Loss: 0.3447, Train Acc: 0.8521, Test Acc: 0.8418
+模型已保存: trained_models/model_epoch_90.pth
+Epoch [91/1000], Loss: 0.3437, Train Acc: 0.8526, Test Acc: 0.8380
+Epoch [92/1000], Loss: 0.3424, Train Acc: 0.8522, Test Acc: 0.8418
+最好的模型已保存: trained_models/best_model.pth
+Epoch [93/1000], Loss: 0.3428, Train Acc: 0.8516, Test Acc: 0.8404
+Epoch [94/1000], Loss: 0.3436, Train Acc: 0.8528, Test Acc: 0.8384
+Epoch [95/1000], Loss: 0.3462, Train Acc: 0.8512, Test Acc: 0.8391
+Epoch [96/1000], Loss: 0.3429, Train Acc: 0.8525, Test Acc: 0.8420
+Epoch [97/1000], Loss: 0.3422, Train Acc: 0.8530, Test Acc: 0.8398
+最好的模型已保存: trained_models/best_model.pth
+Epoch [98/1000], Loss: 0.3413, Train Acc: 0.8536, Test Acc: 0.8375
+最好的模型已保存: trained_models/best_model.pth
+Epoch [99/1000], Loss: 0.3408, Train Acc: 0.8532, Test Acc: 0.8387
+最好的模型已保存: trained_models/best_model.pth
+Epoch [100/1000], Loss: 0.3412, Train Acc: 0.8537, Test Acc: 0.8393
+模型已保存: trained_models/model_epoch_100.pth
+Epoch [101/1000], Loss: 0.3402, Train Acc: 0.8528, Test Acc: 0.8389
+最好的模型已保存: trained_models/best_model.pth
+Epoch [102/1000], Loss: 0.3376, Train Acc: 0.8541, Test Acc: 0.8380
+最好的模型已保存: trained_models/best_model.pth
+Epoch [103/1000], Loss: 0.3367, Train Acc: 0.8536, Test Acc: 0.8405
+最好的模型已保存: trained_models/best_model.pth
+Epoch [104/1000], Loss: 0.3361, Train Acc: 0.8550, Test Acc: 0.8386
+最好的模型已保存: trained_models/best_model.pth
+Epoch [105/1000], Loss: 0.3369, Train Acc: 0.8544, Test Acc: 0.8387
+Epoch [106/1000], Loss: 0.3385, Train Acc: 0.8517, Test Acc: 0.8386
+Epoch [107/1000], Loss: 0.3371, Train Acc: 0.8544, Test Acc: 0.8396
+Epoch [108/1000], Loss: 0.3410, Train Acc: 0.8538, Test Acc: 0.8407
+Epoch [109/1000], Loss: 0.3371, Train Acc: 0.8549, Test Acc: 0.8386
+Epoch [110/1000], Loss: 0.3348, Train Acc: 0.8541, Test Acc: 0.8396
+模型已保存: trained_models/model_epoch_110.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [111/1000], Loss: 0.3389, Train Acc: 0.8543, Test Acc: 0.8375
+Epoch [112/1000], Loss: 0.3365, Train Acc: 0.8549, Test Acc: 0.8402
+Epoch [113/1000], Loss: 0.3374, Train Acc: 0.8538, Test Acc: 0.8413
+Epoch [114/1000], Loss: 0.3346, Train Acc: 0.8560, Test Acc: 0.8378
+最好的模型已保存: trained_models/best_model.pth
+Epoch [115/1000], Loss: 0.3354, Train Acc: 0.8557, Test Acc: 0.8393
+Epoch [116/1000], Loss: 0.3342, Train Acc: 0.8556, Test Acc: 0.8366
+最好的模型已保存: trained_models/best_model.pth
+Epoch [117/1000], Loss: 0.3331, Train Acc: 0.8557, Test Acc: 0.8387
+最好的模型已保存: trained_models/best_model.pth
+Epoch [118/1000], Loss: 0.3348, Train Acc: 0.8542, Test Acc: 0.8405
+Epoch [119/1000], Loss: 0.3326, Train Acc: 0.8566, Test Acc: 0.8384
+最好的模型已保存: trained_models/best_model.pth
+Epoch [120/1000], Loss: 0.3296, Train Acc: 0.8554, Test Acc: 0.8409
+模型已保存: trained_models/model_epoch_120.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [121/1000], Loss: 0.3303, Train Acc: 0.8572, Test Acc: 0.8350
+Epoch [122/1000], Loss: 0.3309, Train Acc: 0.8564, Test Acc: 0.8380
+Epoch [123/1000], Loss: 0.3310, Train Acc: 0.8559, Test Acc: 0.8375
+Epoch [124/1000], Loss: 0.3360, Train Acc: 0.8552, Test Acc: 0.8373
+Epoch [125/1000], Loss: 0.3329, Train Acc: 0.8565, Test Acc: 0.8378
+Epoch [126/1000], Loss: 0.3307, Train Acc: 0.8562, Test Acc: 0.8398
+Epoch [127/1000], Loss: 0.3295, Train Acc: 0.8575, Test Acc: 0.8396
+最好的模型已保存: trained_models/best_model.pth
+Epoch [128/1000], Loss: 0.3273, Train Acc: 0.8581, Test Acc: 0.8380
+最好的模型已保存: trained_models/best_model.pth
+Epoch [129/1000], Loss: 0.3253, Train Acc: 0.8591, Test Acc: 0.8384
+最好的模型已保存: trained_models/best_model.pth
+Epoch [130/1000], Loss: 0.3262, Train Acc: 0.8582, Test Acc: 0.8369
+模型已保存: trained_models/model_epoch_130.pth
+Epoch [131/1000], Loss: 0.3233, Train Acc: 0.8590, Test Acc: 0.8375
+最好的模型已保存: trained_models/best_model.pth
+Epoch [132/1000], Loss: 0.3219, Train Acc: 0.8609, Test Acc: 0.8359
+最好的模型已保存: trained_models/best_model.pth
+Epoch [133/1000], Loss: 0.3208, Train Acc: 0.8615, Test Acc: 0.8373
+最好的模型已保存: trained_models/best_model.pth
+Epoch [134/1000], Loss: 0.3215, Train Acc: 0.8610, Test Acc: 0.8377
+Epoch [135/1000], Loss: 0.3210, Train Acc: 0.8604, Test Acc: 0.8357
+Epoch [136/1000], Loss: 0.3212, Train Acc: 0.8596, Test Acc: 0.8375
+Epoch [137/1000], Loss: 0.3211, Train Acc: 0.8599, Test Acc: 0.8375
+Epoch [138/1000], Loss: 0.3194, Train Acc: 0.8617, Test Acc: 0.8353
+最好的模型已保存: trained_models/best_model.pth
+Epoch [139/1000], Loss: 0.3205, Train Acc: 0.8628, Test Acc: 0.8355
+Epoch [140/1000], Loss: 0.3223, Train Acc: 0.8588, Test Acc: 0.8348
+模型已保存: trained_models/model_epoch_140.pth
+Epoch [141/1000], Loss: 0.3203, Train Acc: 0.8596, Test Acc: 0.8382
+Epoch [142/1000], Loss: 0.3211, Train Acc: 0.8594, Test Acc: 0.8353
+Epoch [143/1000], Loss: 0.3210, Train Acc: 0.8609, Test Acc: 0.8360
+Epoch [144/1000], Loss: 0.3199, Train Acc: 0.8609, Test Acc: 0.8382
+Epoch [145/1000], Loss: 0.3167, Train Acc: 0.8624, Test Acc: 0.8387
+最好的模型已保存: trained_models/best_model.pth
+Epoch [146/1000], Loss: 0.3157, Train Acc: 0.8625, Test Acc: 0.8382
+最好的模型已保存: trained_models/best_model.pth
+Epoch [147/1000], Loss: 0.3153, Train Acc: 0.8629, Test Acc: 0.8375
+最好的模型已保存: trained_models/best_model.pth
+Epoch [148/1000], Loss: 0.3145, Train Acc: 0.8634, Test Acc: 0.8380
+最好的模型已保存: trained_models/best_model.pth
+Epoch [149/1000], Loss: 0.3146, Train Acc: 0.8627, Test Acc: 0.8357
+Epoch [150/1000], Loss: 0.3135, Train Acc: 0.8630, Test Acc: 0.8380
+模型已保存: trained_models/model_epoch_150.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [151/1000], Loss: 0.3131, Train Acc: 0.8643, Test Acc: 0.8391
+最好的模型已保存: trained_models/best_model.pth
+Epoch [152/1000], Loss: 0.3132, Train Acc: 0.8635, Test Acc: 0.8375
+Epoch [153/1000], Loss: 0.3125, Train Acc: 0.8637, Test Acc: 0.8371
+最好的模型已保存: trained_models/best_model.pth
+Epoch [154/1000], Loss: 0.3135, Train Acc: 0.8626, Test Acc: 0.8364
+Epoch [155/1000], Loss: 0.3126, Train Acc: 0.8631, Test Acc: 0.8371
+Epoch [156/1000], Loss: 0.3169, Train Acc: 0.8610, Test Acc: 0.8362
+Epoch [157/1000], Loss: 0.3133, Train Acc: 0.8628, Test Acc: 0.8360
+Epoch [158/1000], Loss: 0.3120, Train Acc: 0.8631, Test Acc: 0.8341
+最好的模型已保存: trained_models/best_model.pth
+Epoch [159/1000], Loss: 0.3109, Train Acc: 0.8636, Test Acc: 0.8373
+最好的模型已保存: trained_models/best_model.pth
+Epoch [160/1000], Loss: 0.3105, Train Acc: 0.8635, Test Acc: 0.8368
+模型已保存: trained_models/model_epoch_160.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [161/1000], Loss: 0.3100, Train Acc: 0.8644, Test Acc: 0.8371
+最好的模型已保存: trained_models/best_model.pth
+Epoch [162/1000], Loss: 0.3098, Train Acc: 0.8648, Test Acc: 0.8369
+最好的模型已保存: trained_models/best_model.pth
+Epoch [163/1000], Loss: 0.3093, Train Acc: 0.8645, Test Acc: 0.8355
+最好的模型已保存: trained_models/best_model.pth
+Epoch [164/1000], Loss: 0.3096, Train Acc: 0.8646, Test Acc: 0.8366
+Epoch [165/1000], Loss: 0.3094, Train Acc: 0.8646, Test Acc: 0.8362
+Epoch [166/1000], Loss: 0.3087, Train Acc: 0.8649, Test Acc: 0.8359
+最好的模型已保存: trained_models/best_model.pth
+Epoch [167/1000], Loss: 0.3093, Train Acc: 0.8652, Test Acc: 0.8377
+Epoch [168/1000], Loss: 0.3102, Train Acc: 0.8641, Test Acc: 0.8348
+Epoch [169/1000], Loss: 0.3098, Train Acc: 0.8635, Test Acc: 0.8371
+Epoch [170/1000], Loss: 0.3095, Train Acc: 0.8648, Test Acc: 0.8359
+模型已保存: trained_models/model_epoch_170.pth
+ 17%|█████████████████                                                                                   | 170/1000 [05:07<24:23,  1.76s/it]
+Epoch [171/1000], Loss: 0.3091, Train Acc: 0.8638, Test Acc: 0.8350
+Epoch [172/1000], Loss: 0.3070, Train Acc: 0.8648, Test Acc: 0.8366
+最好的模型已保存: trained_models/best_model.pth
+Epoch [173/1000], Loss: 0.3073, Train Acc: 0.8649, Test Acc: 0.8362
+Epoch [174/1000], Loss: 0.3070, Train Acc: 0.8649, Test Acc: 0.8350
+最好的模型已保存: trained_models/best_model.pth
+Epoch [175/1000], Loss: 0.3079, Train Acc: 0.8657, Test Acc: 0.8364
+Epoch [176/1000], Loss: 0.3060, Train Acc: 0.8659, Test Acc: 0.8351
+最好的模型已保存: trained_models/best_model.pth
+Epoch [177/1000], Loss: 0.3054, Train Acc: 0.8659, Test Acc: 0.8341
+最好的模型已保存: trained_models/best_model.pth
+Epoch [178/1000], Loss: 0.3058, Train Acc: 0.8659, Test Acc: 0.8366
+Epoch [179/1000], Loss: 0.3067, Train Acc: 0.8660, Test Acc: 0.8324
+Epoch [180/1000], Loss: 0.3057, Train Acc: 0.8658, Test Acc: 0.8357
+模型已保存: trained_models/model_epoch_180.pth
+Epoch [181/1000], Loss: 0.3048, Train Acc: 0.8665, Test Acc: 0.8359
+最好的模型已保存: trained_models/best_model.pth
+Epoch [182/1000], Loss: 0.3042, Train Acc: 0.8661, Test Acc: 0.8357
+最好的模型已保存: trained_models/best_model.pth
+Epoch [183/1000], Loss: 0.3053, Train Acc: 0.8649, Test Acc: 0.8355
+Epoch [184/1000], Loss: 0.3054, Train Acc: 0.8661, Test Acc: 0.8350
+Epoch [185/1000], Loss: 0.3054, Train Acc: 0.8661, Test Acc: 0.8333
+Epoch [186/1000], Loss: 0.3049, Train Acc: 0.8661, Test Acc: 0.8346
+Epoch [187/1000], Loss: 0.3038, Train Acc: 0.8672, Test Acc: 0.8359
+最好的模型已保存: trained_models/best_model.pth
+Epoch [188/1000], Loss: 0.3022, Train Acc: 0.8674, Test Acc: 0.8353
+最好的模型已保存: trained_models/best_model.pth
+Epoch [189/1000], Loss: 0.3022, Train Acc: 0.8677, Test Acc: 0.8342
+最好的模型已保存: trained_models/best_model.pth
+Epoch [190/1000], Loss: 0.3026, Train Acc: 0.8678, Test Acc: 0.8350
+模型已保存: trained_models/model_epoch_190.pth
+Epoch [191/1000], Loss: 0.3031, Train Acc: 0.8684, Test Acc: 0.8364
+Epoch [192/1000], Loss: 0.3026, Train Acc: 0.8673, Test Acc: 0.8348
+Epoch [193/1000], Loss: 0.3014, Train Acc: 0.8670, Test Acc: 0.8362
+最好的模型已保存: trained_models/best_model.pth
+Epoch [194/1000], Loss: 0.3030, Train Acc: 0.8673, Test Acc: 0.8377
+Epoch [195/1000], Loss: 0.3039, Train Acc: 0.8676, Test Acc: 0.8341
+Epoch [196/1000], Loss: 0.3074, Train Acc: 0.8660, Test Acc: 0.8355
+Epoch [197/1000], Loss: 0.3081, Train Acc: 0.8662, Test Acc: 0.8337
+Epoch [198/1000], Loss: 0.3089, Train Acc: 0.8641, Test Acc: 0.8333
+Epoch [199/1000], Loss: 0.3053, Train Acc: 0.8664, Test Acc: 0.8330
+Epoch [200/1000], Loss: 0.3037, Train Acc: 0.8665, Test Acc: 0.8346
+模型已保存: trained_models/model_epoch_200.pth
+Epoch [201/1000], Loss: 0.3026, Train Acc: 0.8676, Test Acc: 0.8353
+Epoch [202/1000], Loss: 0.3010, Train Acc: 0.8687, Test Acc: 0.8337
+最好的模型已保存: trained_models/best_model.pth
+Epoch [203/1000], Loss: 0.3007, Train Acc: 0.8694, Test Acc: 0.8346
+最好的模型已保存: trained_models/best_model.pth
+Epoch [204/1000], Loss: 0.3011, Train Acc: 0.8682, Test Acc: 0.8359
+Epoch [205/1000], Loss: 0.2999, Train Acc: 0.8686, Test Acc: 0.8339
+最好的模型已保存: trained_models/best_model.pth
+Epoch [206/1000], Loss: 0.3003, Train Acc: 0.8687, Test Acc: 0.8350
+Epoch [207/1000], Loss: 0.2998, Train Acc: 0.8692, Test Acc: 0.8353
+最好的模型已保存: trained_models/best_model.pth
+Epoch [208/1000], Loss: 0.2989, Train Acc: 0.8695, Test Acc: 0.8344
+最好的模型已保存: trained_models/best_model.pth
+Epoch [209/1000], Loss: 0.2992, Train Acc: 0.8694, Test Acc: 0.8330
+Epoch [210/1000], Loss: 0.2987, Train Acc: 0.8689, Test Acc: 0.8330
+模型已保存: trained_models/model_epoch_210.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [211/1000], Loss: 0.2988, Train Acc: 0.8696, Test Acc: 0.8337
+Epoch [212/1000], Loss: 0.2989, Train Acc: 0.8692, Test Acc: 0.8332
+Epoch [213/1000], Loss: 0.2984, Train Acc: 0.8697, Test Acc: 0.8335
+最好的模型已保存: trained_models/best_model.pth
+Epoch [214/1000], Loss: 0.2974, Train Acc: 0.8699, Test Acc: 0.8333
+最好的模型已保存: trained_models/best_model.pth
+Epoch [215/1000], Loss: 0.2974, Train Acc: 0.8704, Test Acc: 0.8339
+Epoch [216/1000], Loss: 0.2976, Train Acc: 0.8702, Test Acc: 0.8333
+Epoch [217/1000], Loss: 0.2983, Train Acc: 0.8704, Test Acc: 0.8324
+Epoch [218/1000], Loss: 0.2969, Train Acc: 0.8709, Test Acc: 0.8324
+最好的模型已保存: trained_models/best_model.pth
+Epoch [219/1000], Loss: 0.2971, Train Acc: 0.8703, Test Acc: 0.8330
+Epoch [220/1000], Loss: 0.2961, Train Acc: 0.8709, Test Acc: 0.8330
+模型已保存: trained_models/model_epoch_220.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [221/1000], Loss: 0.2963, Train Acc: 0.8712, Test Acc: 0.8333
+Epoch [222/1000], Loss: 0.2962, Train Acc: 0.8704, Test Acc: 0.8323
+Epoch [223/1000], Loss: 0.2972, Train Acc: 0.8696, Test Acc: 0.8312
+Epoch [224/1000], Loss: 0.2971, Train Acc: 0.8706, Test Acc: 0.8321
+Epoch [225/1000], Loss: 0.2968, Train Acc: 0.8706, Test Acc: 0.8319
+Epoch [226/1000], Loss: 0.2962, Train Acc: 0.8711, Test Acc: 0.8328
+Epoch [227/1000], Loss: 0.2960, Train Acc: 0.8708, Test Acc: 0.8314
+最好的模型已保存: trained_models/best_model.pth
+Epoch [228/1000], Loss: 0.2947, Train Acc: 0.8721, Test Acc: 0.8319
+最好的模型已保存: trained_models/best_model.pth
+Epoch [229/1000], Loss: 0.2954, Train Acc: 0.8716, Test Acc: 0.8315
+Epoch [230/1000], Loss: 0.2948, Train Acc: 0.8722, Test Acc: 0.8317
+模型已保存: trained_models/model_epoch_230.pth
+Epoch [231/1000], Loss: 0.2946, Train Acc: 0.8722, Test Acc: 0.8310
+最好的模型已保存: trained_models/best_model.pth
+Epoch [232/1000], Loss: 0.2947, Train Acc: 0.8718, Test Acc: 0.8315
+Epoch [233/1000], Loss: 0.2950, Train Acc: 0.8715, Test Acc: 0.8315
+Epoch [234/1000], Loss: 0.2943, Train Acc: 0.8720, Test Acc: 0.8308
+最好的模型已保存: trained_models/best_model.pth
+Epoch [235/1000], Loss: 0.2944, Train Acc: 0.8722, Test Acc: 0.8319
+Epoch [236/1000], Loss: 0.2944, Train Acc: 0.8726, Test Acc: 0.8323
+Epoch [237/1000], Loss: 0.2946, Train Acc: 0.8732, Test Acc: 0.8305
+Epoch [238/1000], Loss: 0.2940, Train Acc: 0.8721, Test Acc: 0.8323
+最好的模型已保存: trained_models/best_model.pth
+Epoch [239/1000], Loss: 0.2944, Train Acc: 0.8724, Test Acc: 0.8321
+Epoch [240/1000], Loss: 0.2938, Train Acc: 0.8726, Test Acc: 0.8317
+模型已保存: trained_models/model_epoch_240.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [241/1000], Loss: 0.2936, Train Acc: 0.8726, Test Acc: 0.8314
+最好的模型已保存: trained_models/best_model.pth
+Epoch [242/1000], Loss: 0.2931, Train Acc: 0.8728, Test Acc: 0.8315
+最好的模型已保存: trained_models/best_model.pth
+Epoch [243/1000], Loss: 0.2930, Train Acc: 0.8736, Test Acc: 0.8323
+最好的模型已保存: trained_models/best_model.pth
+Epoch [244/1000], Loss: 0.2930, Train Acc: 0.8728, Test Acc: 0.8312
+Epoch [245/1000], Loss: 0.2934, Train Acc: 0.8725, Test Acc: 0.8319
+Epoch [246/1000], Loss: 0.2924, Train Acc: 0.8736, Test Acc: 0.8306
+最好的模型已保存: trained_models/best_model.pth
+Epoch [247/1000], Loss: 0.2934, Train Acc: 0.8724, Test Acc: 0.8323
+Epoch [248/1000], Loss: 0.2934, Train Acc: 0.8724, Test Acc: 0.8305
+Epoch [249/1000], Loss: 0.2936, Train Acc: 0.8728, Test Acc: 0.8312
+Epoch [250/1000], Loss: 0.2923, Train Acc: 0.8731, Test Acc: 0.8317
+模型已保存: trained_models/model_epoch_250.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [251/1000], Loss: 0.2930, Train Acc: 0.8726, Test Acc: 0.8305
+Epoch [252/1000], Loss: 0.2924, Train Acc: 0.8732, Test Acc: 0.8308
+Epoch [253/1000], Loss: 0.2926, Train Acc: 0.8729, Test Acc: 0.8315
+Epoch [254/1000], Loss: 0.2920, Train Acc: 0.8729, Test Acc: 0.8312
+最好的模型已保存: trained_models/best_model.pth
+Epoch [255/1000], Loss: 0.2928, Train Acc: 0.8732, Test Acc: 0.8312
+Epoch [256/1000], Loss: 0.2914, Train Acc: 0.8742, Test Acc: 0.8301
+最好的模型已保存: trained_models/best_model.pth
+Epoch [257/1000], Loss: 0.2919, Train Acc: 0.8731, Test Acc: 0.8299
+Epoch [258/1000], Loss: 0.2924, Train Acc: 0.8730, Test Acc: 0.8303
+Epoch [259/1000], Loss: 0.2914, Train Acc: 0.8730, Test Acc: 0.8308
+最好的模型已保存: trained_models/best_model.pth
+Epoch [260/1000], Loss: 0.2914, Train Acc: 0.8736, Test Acc: 0.8299
+模型已保存: trained_models/model_epoch_260.pth
+Epoch [261/1000], Loss: 0.2916, Train Acc: 0.8728, Test Acc: 0.8305
+Epoch [262/1000], Loss: 0.2919, Train Acc: 0.8729, Test Acc: 0.8294
+Epoch [263/1000], Loss: 0.2919, Train Acc: 0.8736, Test Acc: 0.8305
+Epoch [264/1000], Loss: 0.2924, Train Acc: 0.8718, Test Acc: 0.8314
+Epoch [265/1000], Loss: 0.2924, Train Acc: 0.8724, Test Acc: 0.8306
+Epoch [266/1000], Loss: 0.2911, Train Acc: 0.8730, Test Acc: 0.8306
+最好的模型已保存: trained_models/best_model.pth
+Epoch [267/1000], Loss: 0.2913, Train Acc: 0.8729, Test Acc: 0.8303
+Epoch [268/1000], Loss: 0.2915, Train Acc: 0.8729, Test Acc: 0.8294
+Epoch [269/1000], Loss: 0.2910, Train Acc: 0.8731, Test Acc: 0.8303
+最好的模型已保存: trained_models/best_model.pth
+Epoch [270/1000], Loss: 0.2906, Train Acc: 0.8737, Test Acc: 0.8299
+模型已保存: trained_models/model_epoch_270.pth
+最好的模型已保存: trained_models/best_model.pth
+Epoch [271/1000], Loss: 0.2906, Train Acc: 0.8734, Test Acc: 0.8299
+Epoch [272/1000], Loss: 0.2910, Train Acc: 0.8732, Test Acc: 0.8308
+Epoch [273/1000], Loss: 0.2910, Train Acc: 0.8731, Test Acc: 0.8306
+Epoch [274/1000], Loss: 0.2907, Train Acc: 0.8737, Test Acc: 0.8301
+Epoch [275/1000], Loss: 0.2913, Train Acc: 0.8732, Test Acc: 0.8305
+Epoch [276/1000], Loss: 0.2907, Train Acc: 0.8736, Test Acc: 0.8303
+Epoch [277/1000], Loss: 0.2914, Train Acc: 0.8734, Test Acc: 0.8308
+Epoch [278/1000], Loss: 0.2905, Train Acc: 0.8740, Test Acc: 0.8305
+最好的模型已保存: trained_models/best_model.pth
+Epoch [279/1000], Loss: 0.2906, Train Acc: 0.8738, Test Acc: 0.8310
+Epoch [280/1000], Loss: 0.2908, Train Acc: 0.8736, Test Acc: 0.8310
+模型已保存: trained_models/model_epoch_280.pth
+Epoch [281/1000], Loss: 0.2904, Train Acc: 0.8736, Test Acc: 0.8308
+最好的模型已保存: trained_models/best_model.pth
+Epoch [282/1000], Loss: 0.2901, Train Acc: 0.8740, Test Acc: 0.8306
+最好的模型已保存: trained_models/best_model.pth
+Epoch [283/1000], Loss: 0.2902, Train Acc: 0.8737, Test Acc: 0.8305
+Epoch [284/1000], Loss: 0.2899, Train Acc: 0.8742, Test Acc: 0.8306
+最好的模型已保存: trained_models/best_model.pth
+Epoch [285/1000], Loss: 0.2904, Train Acc: 0.8741, Test Acc: 0.8306
+Epoch [286/1000], Loss: 0.2900, Train Acc: 0.8742, Test Acc: 0.8305
+Epoch [287/1000], Loss: 0.2908, Train Acc: 0.8736, Test Acc: 0.8306
+Epoch [288/1000], Loss: 0.2901, Train Acc: 0.8741, Test Acc: 0.8312
+Epoch [289/1000], Loss: 0.2902, Train Acc: 0.8739, Test Acc: 0.8306
+Epoch [290/1000], Loss: 0.2903, Train Acc: 0.8741, Test Acc: 0.8299
+模型已保存: trained_models/model_epoch_290.pth
+Epoch [291/1000], Loss: 0.2894, Train Acc: 0.8747, Test Acc: 0.8306
+最好的模型已保存: trained_models/best_model.pth
+Epoch [292/1000], Loss: 0.2903, Train Acc: 0.8739, Test Acc: 0.8306
+Epoch [293/1000], Loss: 0.2906, Train Acc: 0.8739, Test Acc: 0.8308
+Epoch [294/1000], Loss: 0.2904, Train Acc: 0.8739, Test Acc: 0.8306
+Epoch [295/1000], Loss: 0.2894, Train Acc: 0.8746, Test Acc: 0.8305
+最好的模型已保存: trained_models/best_model.pth
+Epoch [296/1000], Loss: 0.2900, Train Acc: 0.8743, Test Acc: 0.8310
+Epoch [297/1000], Loss: 0.2902, Train Acc: 0.8740, Test Acc: 0.8303
+Epoch [298/1000], Loss: 0.2897, Train Acc: 0.8743, Test Acc: 0.8305
+Epoch [299/1000], Loss: 0.2897, Train Acc: 0.8742, Test Acc: 0.8306
+Epoch [300/1000], Loss: 0.2896, Train Acc: 0.8742, Test Acc: 0.8303
+模型已保存: trained_models/model_epoch_300.pth
+Epoch [301/1000], Loss: 0.2905, Train Acc: 0.8740, Test Acc: 0.8306
+Epoch [302/1000], Loss: 0.2901, Train Acc: 0.8742, Test Acc: 0.8303
+Epoch [303/1000], Loss: 0.2903, Train Acc: 0.8739, Test Acc: 0.8305
+Epoch [304/1000], Loss: 0.2901, Train Acc: 0.8740, Test Acc: 0.8305
+Epoch [305/1000], Loss: 0.2899, Train Acc: 0.8743, Test Acc: 0.8303
+
+ 30%|██████████████████████████████▍                                                                     | 304/1000 [09:29<21:44,  1.87s/it]

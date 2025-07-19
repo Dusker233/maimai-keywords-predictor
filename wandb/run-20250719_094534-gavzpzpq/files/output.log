@@ -1,0 +1,55 @@
+未找到已保存的模型，从头开始训练
+  1%|▊                                                                                                   | 8/1000 [02:08<4:25:29, 16.06s/it]
+
+Epoch [1/1000], Loss: 0.5318, Train Acc: 0.7757, Test Acc: 0.8391
+最好的模型已保存: trained_models/best_model_gavzpzpq.pth
+
+Epoch [2/1000], Loss: 0.4002, Train Acc: 0.8312, Test Acc: 0.8396
+最好的模型已保存: trained_models/best_model_gavzpzpq.pth
+
+Epoch [3/1000], Loss: 0.3957, Train Acc: 0.8326, Test Acc: 0.8418
+最好的模型已保存: trained_models/best_model_gavzpzpq.pth
+
+Epoch [4/1000], Loss: 0.3901, Train Acc: 0.8333, Test Acc: 0.8418
+最好的模型已保存: trained_models/best_model_gavzpzpq.pth
+
+Epoch [5/1000], Loss: 0.3844, Train Acc: 0.8368, Test Acc: 0.8443
+最好的模型已保存: trained_models/best_model_gavzpzpq.pth
+
+Epoch [6/1000], Loss: 0.3814, Train Acc: 0.8385, Test Acc: 0.8432
+最好的模型已保存: trained_models/best_model_gavzpzpq.pth
+
+Epoch [7/1000], Loss: 0.3833, Train Acc: 0.8352, Test Acc: 0.8443
+
+Epoch [8/1000], Loss: 0.3828, Train Acc: 0.8372, Test Acc: 0.8443
+Traceback (most recent call last):
+  File "/mnt/f/maimai/train.py", line 243, in <module>
+    plt.figure(figsize=(10, 6))
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/matplotlib/pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+              ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/matplotlib/pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/matplotlib/backends/_backend_tk.py", line 527, in create_with_canvas
+    canvas = canvas_class(figure, master=window)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/maimai/.venv/lib/python3.11/site-packages/matplotlib/backends/_backend_tk.py", line 176, in __init__
+    self._tkcanvas_image_region = self._tkcanvas.create_image(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dusker/miniconda3/lib/python3.11/tkinter/__init__.py", line 2846, in create_image
+    return self._create('image', args, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dusker/miniconda3/lib/python3.11/tkinter/__init__.py", line 2832, in _create
+    return self.tk.getint(self.tk.call(
+                          ^^^^^^^^^^^^^
+KeyboardInterrupt
