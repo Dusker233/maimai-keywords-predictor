@@ -1,7 +1,0 @@
-加载已保存的模型: trained_models/best_model.pth
-  0%|                                                                                                              | 0/1000 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "/mnt/f/maimai/train.py", line 221, in <module>
-    batch_losses[idx].item(),
-    ^^^^^^^^^^^^^^^^^^^^^^^^
-RuntimeError: a Tensor with 25 elements cannot be converted to Scalar
