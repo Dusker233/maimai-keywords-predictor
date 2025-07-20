@@ -74,10 +74,12 @@ if __name__ == "__main__":
         print("请先安装进度条库：pip install tqdm")
         exit(1)
 
-    output_directory = "./serialized_data/"
-    info_directory = "./info/"
+    output_directory = "./new_serialized_data/"
+    info_directory = "./new_info/"
     success_log = "success.log"
     error_log = "error.log"
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
     if not os.path.exists(info_directory):
         os.makedirs(info_directory)
     csv_path = os.path.join(info_directory, "chart_info.csv")  # CSV文件路径
@@ -87,7 +89,8 @@ if __name__ == "__main__":
     errors = load_processed_log(error_log)
 
     # 查找所有maidata.txt路径
-    maidat_paths = glob.glob("./Maichart-Converts/**/*/maidata.txt", recursive=True)
+    maidat_paths = glob.glob("./new_maidata/**/*/maidata.txt", recursive=True)
+    # maidat_paths = glob.glob("./Maichart-Converts/**/*/maidata.txt", recursive=True)
     target_dirs = {os.path.abspath(os.path.dirname(p)) for p in maidat_paths}
 
     # 过滤未处理的目录

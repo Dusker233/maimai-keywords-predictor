@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 
 csv_file_path = "./info/chart_info.csv"
 title_id_path = "./title_id.csv"
-tags_path = "./combined-tags.json"
+tags_path = "./combined-tags-mapped.json"
 dataset_path = "./"
 
 id_title_map = defaultdict(str)
@@ -134,10 +134,13 @@ model = LSTMWithAttention(
 
 # 定义损失函数和优化器
 criterion = nn.BCEWithLogitsLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+optimizer = optim.AdamW(model.parameters(), lr=0.0005)
 scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-    optimizer, "min", patience=5, factor=0.5
+    optimizer, "min", patience=3, factor=0.5
 )
+# optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
+# # 固定步长衰减
+# scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=15, gamma=0.1)
 
 # 定义早停机制
 early_stopping_patience = 10
@@ -151,19 +154,27 @@ run = wandb.init(
     entity="dusker233-southeastern-university",
     project="maimai-chart-keyword-predictor",
     config={
-        "learning_rate": 0.001,
+        "learning_rate": 0.0005,
+        # "momentum": 0.9,
         "batch_size": 32,
-        "epochs": 1000,
-        "early_stopping_patience": 10,
-        "target_loss": 0.01,
+        "epochs": 300,
+        # "early_stopping_patience": 10,
+        # "target_loss": 0.01,
         "model_name": "LSTMWithAttention",
+        "optimizer": "AdamW",
+        # "optimizer": "SGD",
+        # "scheduler": "StepLR",
+        # "scheduler.step_size": 15,
+        # "scheduler.gamma": 0.1,
     },
 )
 run.watch(model, log_freq=1)
 run_id = run.id
 
 # 检查是否存在已保存的模型
-model_path = f"trained_models/best_model_{run_id}.pth"
+if not os.path.exists(f"./trained_models/{run_id}"):
+    os.makedirs(f"./trained_models/{run_id}", exist_ok=True)
+model_path = f"trained_models/{run_id}/best_model.pth"
 if os.path.exists(model_path):
     model.load_state_dict(torch.load(model_path))
     print(f"加载已保存的模型: {model_path}")
@@ -171,14 +182,15 @@ else:
     print("未找到已保存的模型，从头开始训练")
 
 # 训练模型
-num_epochs = 1000  # 设置一个较大的初始值
+num_epochs = 300  # 设置一个较大的初始值
 save_interval = 10  # 每10轮保存一次模型
 
 
 def calculate_accuracy(outputs, labels, threshold=0.5):
     """计算多标签分类准确率"""
     probs = torch.sigmoid(outputs)  # 转换为概率
-    predicted = (probs > threshold).float()  # 二值化预测结果
+    predicted = (probs >= threshold).float()  # 二值化预测结果
+    # print(predicted, labels)
     correct = (predicted == labels).sum().item()
     total = labels.numel()
     return correct / total
@@ -193,9 +205,28 @@ def evaluate(model, test_loader):
             inputs, labels = inputs.cuda(), labels.cuda()
             outputs, _ = model(inputs)
             # 计算准确率
-            correct += ((torch.sigmoid(outputs) > 0.5).float() == labels).sum().item()
+            correct += ((torch.sigmoid(outputs) >= 0.5).float() == labels).sum().item()
             total += labels.numel()
     return correct / total
+
+
+from sklearn.metrics import f1_score
+
+
+def calculate_f1(outputs, labels, threshold=0.5):
+    probs = torch.sigmoid(outputs).cpu().detach().numpy()
+    preds = (probs >= threshold).astype(int)
+    return f1_score(labels.cpu().detach().numpy().flatten(), preds.flatten())
+
+
+def calculate_eval_f1(model, test_loader):
+    model.eval()
+    f1 = 0
+    for inputs, labels, _ in test_loader:
+        inputs, labels = inputs.cuda(), labels.cuda()
+        outputs, _ = model(inputs)
+        f1 += calculate_f1(outputs, labels)
+    return f1 / len(test_loader)
 
 
 for epoch in tqdm(range(num_epochs)):
@@ -221,29 +252,31 @@ for epoch in tqdm(range(num_epochs)):
         high_error_indices = high_error_mask.nonzero().flatten().tolist()
 
         for idx in high_error_indices:
+            probbs = torch.sigmoid(outputs[idx])
+            pred = (probbs > 0.5).float()
             high_error_samples.append(
                 [
                     metadata[idx]["song_id"],
                     metadata[idx]["level_index"],
                     batch_losses[idx].item(),
-                    torch.sigmoid(outputs[idx]).tolist(),
+                    pred.tolist(),
                     labels[idx].tolist(),
                 ]
             )
         # 使用 wandb 可视化每个标签的损失分布
-        for tag_idx in range(25):
-            run.log(
-                {
-                    f"loss_tag_{tag_idx}": wandb.Histogram(
-                        raw_losses[:, tag_idx].detach().cpu().numpy()
-                    )
-                },
-                step=epoch,
-            )
-        plt.figure(figsize=(10, 6))
-        sns.heatmap(raw_losses.cpu().detach().numpy(), cmap="viridis")
-        run.log({"loss_heatmap": wandb.Image(plt)}, step=epoch)
-        plt.close()
+        # for tag_idx in range(25):
+        #     run.log(
+        #         {
+        #             f"loss_tag_{tag_idx}": wandb.Histogram(
+        #                 raw_losses[:, tag_idx].detach().cpu().numpy()
+        #             )
+        #         },
+        #         step=epoch,
+        #     )
+        # plt.figure(figsize=(10, 6))
+        # sns.heatmap(raw_losses.cpu().detach().numpy(), cmap="viridis")
+        # run.log({"loss_heatmap": wandb.Image(plt)}, step=epoch)
+        # plt.close()
 
         # 反向传播和优化
         optimizer.zero_grad()
@@ -251,11 +284,14 @@ for epoch in tqdm(range(num_epochs)):
         optimizer.step()
         epoch_loss += loss.item()
         train_acc += calculate_accuracy(outputs, labels)
+        # 梯度裁剪，防止梯度爆炸
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 
     epoch_loss /= len(train_loader)
     train_acc /= len(train_loader)
     test_acc = evaluate(model, test_loader)
 
+    # scheduler.step()
     scheduler.step(epoch_loss)
 
     run.log(
@@ -264,6 +300,8 @@ for epoch in tqdm(range(num_epochs)):
             "train_loss": epoch_loss,
             "train_acc": train_acc,
             "test_acc": test_acc,
+            "train_f1": calculate_f1(outputs, labels),
+            "test_f1": calculate_eval_f1(model, test_loader),
         },
         step=epoch,
     )
@@ -281,7 +319,7 @@ for epoch in tqdm(range(num_epochs)):
     # 保存模型
     if (epoch + 1) % save_interval == 0:
         model_save_path = os.path.join(
-            "trained_models", f"{run_id}_model_epoch_{epoch+1}.pth"
+            "trained_models", f"{run_id}", f"model_epoch_{epoch+1}.pth"
         )
         torch.save(model.state_dict(), model_save_path)
         print(f"模型已保存: {model_save_path}")
@@ -291,7 +329,7 @@ for epoch in tqdm(range(num_epochs)):
         best_loss = epoch_loss
         epochs_no_improve = 0
         # 保存最好的模型
-        best_model_path = f"trained_models/best_model_{run_id}.pth"
+        best_model_path = f"trained_models/{run_id}/best_model.pth"
         torch.save(model.state_dict(), best_model_path)
         print(f"最好的模型已保存: {best_model_path}")
     else:

@@ -19,4 +19,4 @@ difficulty_mapping = {
     "remaster": 4,
 }
 
-max_tags = 24
+max_tags = 20
