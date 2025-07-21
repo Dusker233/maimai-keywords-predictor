@@ -87,7 +87,7 @@ with open(csv_file_path, "r", encoding="utf-8") as f:
 print(f"读取了 {len(json_data_list)} 个 JSON 文件的数据")
 
 note_dataset = ChartDataset(json_data_list)
-train_size = int(len(note_dataset) * 0.8)
+train_size = int(len(note_dataset) * 0.9)
 test_size = len(note_dataset) - train_size
 train_dataset, test_dataset = random_split(note_dataset, [train_size, test_size])
 
@@ -125,11 +125,11 @@ test_loader = DataLoader(
 
 model = LSTMWithAttention(
     input_size=18,
-    hidden_size=128,
-    num_layers=2,
+    hidden_size=256,
+    num_layers=3,
     output_size=max_tags + 1,
     special_indices=special_indices,
-    special_weight=10.0,
+    special_weight=5.0,
 ).cuda()
 
 # 定义损失函数和优化器
@@ -157,11 +157,14 @@ run = wandb.init(
         "learning_rate": 0.0005,
         # "momentum": 0.9,
         "batch_size": 32,
-        "epochs": 300,
+        "epochs": 500,
         # "early_stopping_patience": 10,
         # "target_loss": 0.01,
         "model_name": "LSTMWithAttention",
         "optimizer": "AdamW",
+        "model.hidden_size": 256,
+        "model.num_layers": 3,
+        "model.special_weight": 5.0,
         # "optimizer": "SGD",
         # "scheduler": "StepLR",
         # "scheduler.step_size": 15,
@@ -182,7 +185,7 @@ else:
     print("未找到已保存的模型，从头开始训练")
 
 # 训练模型
-num_epochs = 300  # 设置一个较大的初始值
+num_epochs = 500  # 设置一个较大的初始值
 save_interval = 10  # 每10轮保存一次模型
 
 
@@ -233,6 +236,7 @@ for epoch in tqdm(range(num_epochs)):
     model.train()
     epoch_loss = 0
     train_acc = 0
+    train_f1 = 0
     high_error_samples = []  # 存储高误差样本
 
     for inputs, labels, metadata in train_loader:
@@ -248,12 +252,12 @@ for epoch in tqdm(range(num_epochs)):
         batch_losses = raw_losses.sum(dim=1)
 
         threshold = batch_losses.mean()
-        high_error_mask = batch_losses > threshold
+        high_error_mask = batch_losses >= threshold
         high_error_indices = high_error_mask.nonzero().flatten().tolist()
 
         for idx in high_error_indices:
             probbs = torch.sigmoid(outputs[idx])
-            pred = (probbs > 0.5).float()
+            pred = (probbs >= 0.5).float()
             high_error_samples.append(
                 [
                     metadata[idx]["song_id"],
@@ -284,12 +288,15 @@ for epoch in tqdm(range(num_epochs)):
         optimizer.step()
         epoch_loss += loss.item()
         train_acc += calculate_accuracy(outputs, labels)
+        train_f1 += calculate_f1(outputs, labels)
         # 梯度裁剪，防止梯度爆炸
         torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 
     epoch_loss /= len(train_loader)
     train_acc /= len(train_loader)
+    train_f1 /= len(train_loader)
     test_acc = evaluate(model, test_loader)
+    test_f1 = calculate_eval_f1(model, test_loader)
 
     # scheduler.step()
     scheduler.step(epoch_loss)
@@ -300,8 +307,8 @@ for epoch in tqdm(range(num_epochs)):
             "train_loss": epoch_loss,
             "train_acc": train_acc,
             "test_acc": test_acc,
-            "train_f1": calculate_f1(outputs, labels),
-            "test_f1": calculate_eval_f1(model, test_loader),
+            "train_f1": train_f1,
+            "test_f1": test_f1,
         },
         step=epoch,
     )
@@ -313,7 +320,7 @@ for epoch in tqdm(range(num_epochs)):
 
     # 打印高误差样本
     print(
-        f"\nEpoch [{epoch + 1}/{num_epochs}], Loss: {epoch_loss:.4f}, Train Acc: {train_acc:.4f}, Test Acc: {test_acc:.4f}"
+        f"\nEpoch [{epoch + 1}/{num_epochs}], Loss: {epoch_loss:.4f}, Train Acc: {train_acc:.4f}, Test Acc: {test_acc:.4f}, Train F1: {train_f1:.4f}, Test F1: {test_f1:.4f}"
     )
 
     # 保存模型
