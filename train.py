@@ -12,12 +12,15 @@ import os
 from models.LSTM import LSTMWithAttention
 from utils.chartDataset import ChartDataset
 import wandb
+import swanlab
+
+swanlab.sync_wandb()
 
 # 添加损失热力图可视化
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# os.environ["WANDB_MODE"] = "offline"
+os.environ["WANDB_MODE"] = "offline"
 
 csv_file_path = "./info/chart_info.csv"
 title_id_path = "./title_id.csv"
@@ -95,8 +98,8 @@ max_note_length = max(len(sequence) for sequence in note_dataset.data)
 print(f"数据集中最大 note 数量: {max_note_length}")
 
 # 使用训练集中最大 note 数量 + 200 作为固定长度，一般地，这个值通常在 1600 左右
-fixed_note_length = max_note_length + 200
-
+# fixed_note_length = max_note_length + 200
+fixed_note_length = 1600
 
 def collate_fn(batch):
     data, labels, metadata = zip(*batch)
@@ -129,12 +132,12 @@ model = LSTMWithAttention(
     num_layers=3,
     output_size=max_tags + 1,
     special_indices=special_indices,
-    special_weight=5.0,
+    special_weight=10.0,
 ).cuda()
 
 # 定义损失函数和优化器
 criterion = nn.BCEWithLogitsLoss()
-optimizer = optim.AdamW(model.parameters(), lr=0.0005)
+optimizer = optim.AdamW(model.parameters(), lr=1e-4)
 scheduler = optim.lr_scheduler.ReduceLROnPlateau(
     optimizer, "min", patience=3, factor=0.5
 )
@@ -154,17 +157,17 @@ run = wandb.init(
     entity="dusker233-southeastern-university",
     project="maimai-chart-keyword-predictor",
     config={
-        "learning_rate": 0.0005,
+        "learning_rate": 1e-4,
         # "momentum": 0.9,
         "batch_size": 32,
-        "epochs": 500,
+        "epochs": 200,
         # "early_stopping_patience": 10,
         # "target_loss": 0.01,
         "model_name": "LSTMWithAttention",
         "optimizer": "AdamW",
         "model.hidden_size": 256,
         "model.num_layers": 3,
-        "model.special_weight": 5.0,
+        "model.special_weight": 10.0,
         # "optimizer": "SGD",
         # "scheduler": "StepLR",
         # "scheduler.step_size": 15,
@@ -185,7 +188,7 @@ else:
     print("未找到已保存的模型，从头开始训练")
 
 # 训练模型
-num_epochs = 500  # 设置一个较大的初始值
+num_epochs = 200  # 设置一个较大的初始值
 save_interval = 10  # 每10轮保存一次模型
 
 
@@ -219,7 +222,7 @@ from sklearn.metrics import f1_score
 def calculate_f1(outputs, labels, threshold=0.5):
     probs = torch.sigmoid(outputs).cpu().detach().numpy()
     preds = (probs >= threshold).astype(int)
-    return f1_score(labels.cpu().detach().numpy().flatten(), preds.flatten())
+    return f1_score(labels.cpu().detach().numpy().flatten(), preds.flatten(), average='weighted')
 
 
 def calculate_eval_f1(model, test_loader):
@@ -315,9 +318,12 @@ for epoch in tqdm(range(num_epochs)):
     high_error_samples = sorted(high_error_samples, key=lambda x: x[2], reverse=True)
     high_error_samples = high_error_samples[:5]
     columns = ["song_id", "level_index", "loss", "prediction", "label"]
-    table = wandb.Table(columns=columns, data=high_error_samples)
-    run.log({"high_error_samples": table}, step=epoch)
-
+    wandb_table = wandb.Table(columns=columns, data=high_error_samples)
+    swanlab_table = swanlab.echarts.Table()
+    swanlab_table.add(headers=columns, rows=high_error_samples)
+    run.log({"high_error_samples": wandb_table}, step=epoch)
+    swanlab.log({"high_error_samples": swanlab_table})
+    
     # 打印高误差样本
     print(
         f"\nEpoch [{epoch + 1}/{num_epochs}], Loss: {epoch_loss:.4f}, Train Acc: {train_acc:.4f}, Test Acc: {test_acc:.4f}, Train F1: {train_f1:.4f}, Test F1: {test_f1:.4f}"

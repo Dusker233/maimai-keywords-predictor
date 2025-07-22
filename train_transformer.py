@@ -12,6 +12,9 @@ import os
 from models.Transformer2 import TransformerWithHead
 from utils.chartDataset import ChartDataset
 import wandb
+import swanlab
+
+swanlab.sync_wandb()
 
 # 添加损失热力图可视化
 import seaborn as sns
@@ -123,20 +126,12 @@ test_loader = DataLoader(
     test_dataset, batch_size=32, shuffle=False, collate_fn=collate_fn
 )
 
-# model = LSTMWithAttention(
-#     input_size=18,
-#     hidden_size=256,
-#     num_layers=3,
-#     output_size=max_tags + 1,
-#     special_indices=special_indices,
-#     special_weight=5.0,
-# ).cuda()
 
 model = TransformerWithHead(
     input_dim=18,
-    d_model=256,
-    num_heads=8,
-    num_layers=3,
+    d_model=128,
+    num_heads=16,
+    num_layers=2,
     num_labels=max_tags + 1,  # 根据你的数据
     max_len=fixed_note_length,
     dropout=0.1,
@@ -144,7 +139,7 @@ model = TransformerWithHead(
 
 # 定义损失函数和优化器
 criterion = nn.BCEWithLogitsLoss()
-optimizer = optim.AdamW(model.parameters(), lr=0.0005)
+optimizer = optim.AdamW(model.parameters(), lr=1e-4)
 scheduler = optim.lr_scheduler.ReduceLROnPlateau(
     optimizer, "min", patience=3, factor=0.5
 )
@@ -164,7 +159,7 @@ run = wandb.init(
     entity="dusker233-southeastern-university",
     project="maimai-chart-keyword-predictor",
     config={
-        "learning_rate": 0.0005,
+        "learning_rate": 1e-4,
         # "momentum": 0.9,
         "batch_size": 32,
         "epochs": 100,
@@ -172,9 +167,9 @@ run = wandb.init(
         # "target_loss": 0.01,
         "model_name": "Transformer",
         "optimizer": "AdamW",
-        "model.hidden_size": 256,
-        "model.num_layers": 3,
-        "model.num_heads": 8,
+        "model.hidden_size": 128,
+        "model.num_layers": 2,
+        "model.num_heads": 16,
         "model.dropout": 0.1,
         # "model.special_weight": 5.0,
         # "optimizer": "SGD",
@@ -231,7 +226,7 @@ from sklearn.metrics import f1_score
 def calculate_f1(outputs, labels, threshold=0.5):
     probs = torch.sigmoid(outputs).cpu().detach().numpy()
     preds = (probs >= threshold).astype(int)
-    return f1_score(labels.cpu().detach().numpy().flatten(), preds.flatten())
+    return f1_score(labels.cpu().detach().numpy().flatten(), preds.flatten(), average='weighted')
 
 
 def calculate_eval_f1(model, test_loader):
@@ -327,8 +322,11 @@ for epoch in tqdm(range(num_epochs)):
     high_error_samples = sorted(high_error_samples, key=lambda x: x[2], reverse=True)
     high_error_samples = high_error_samples[:5]
     columns = ["song_id", "level_index", "loss", "prediction", "label"]
-    table = wandb.Table(columns=columns, data=high_error_samples)
-    run.log({"high_error_samples": table}, step=epoch)
+    wandb_table = wandb.Table(columns=columns, data=high_error_samples)
+    swanlab_table = swanlab.echarts.Table()
+    swanlab_table.add(headers=columns, rows=high_error_samples)
+    run.log({"high_error_samples": wandb_table}, step=epoch)
+    swanlab.log({"high_error_samples": swanlab_table})
 
     # 打印高误差样本
     print(
