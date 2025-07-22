@@ -11,6 +11,7 @@ from tqdm import tqdm
 import os
 from models.Transformer2 import TransformerWithHead
 from utils.chartDataset import ChartDataset
+from utils.focalLoss import MultiLabelFocalLossWithLogits, compute_samplewise_focal_loss
 import wandb
 import swanlab
 
@@ -120,32 +121,45 @@ def collate_fn(batch):
 
 # 创建训练和测试数据加载器
 train_loader = DataLoader(
-    train_dataset, batch_size=32, shuffle=True, collate_fn=collate_fn
+    train_dataset, batch_size=64, shuffle=True, collate_fn=collate_fn
 )
 test_loader = DataLoader(
-    test_dataset, batch_size=32, shuffle=False, collate_fn=collate_fn
+    test_dataset, batch_size=64, shuffle=True, collate_fn=collate_fn
 )
 
 
 model = TransformerWithHead(
     input_dim=18,
     d_model=128,
-    num_heads=16,
-    num_layers=2,
+    num_heads=8,
+    num_layers=3,
     num_labels=max_tags + 1,  # 根据你的数据
     max_len=fixed_note_length,
-    dropout=0.1,
+    dropout=0.3,
 ).cuda()
+
+# 训练模型
+num_epochs = 100  # 设置一个较大的初始值
+save_interval = 10  # 每10轮保存一次模型
 
 # 定义损失函数和优化器
 criterion = nn.BCEWithLogitsLoss()
-optimizer = optim.AdamW(model.parameters(), lr=1e-4)
-scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-    optimizer, "min", patience=3, factor=0.5
+# criterion = MultiLabelFocalLossWithLogits()
+optimizer = optim.AdamW(model.parameters(), lr=7e-5, weight_decay=1e-4)
+# scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+#     optimizer, "min", patience=3, factor=0.5
+# )
+
+# 预设参数
+total_steps = len(train_loader) * num_epochs
+warmup_steps = int(total_steps * 0.1)  # 通常是 10%
+
+# 调度器
+from transformers import get_cosine_schedule_with_warmup
+
+scheduler = get_cosine_schedule_with_warmup(
+    optimizer, num_warmup_steps=warmup_steps, num_training_steps=total_steps
 )
-# optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
-# # 固定步长衰减
-# scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=15, gamma=0.1)
 
 # 定义早停机制
 early_stopping_patience = 10
@@ -159,21 +173,22 @@ run = wandb.init(
     entity="dusker233-southeastern-university",
     project="maimai-chart-keyword-predictor",
     config={
-        "learning_rate": 1e-4,
+        "learning_rate": 7e-5,
+        "weight_decay": 1e-4,
         # "momentum": 0.9,
-        "batch_size": 32,
+        "batch_size": 64,
         "epochs": 100,
         # "early_stopping_patience": 10,
         # "target_loss": 0.01,
         "model_name": "Transformer",
         "optimizer": "AdamW",
         "model.hidden_size": 128,
-        "model.num_layers": 2,
-        "model.num_heads": 16,
-        "model.dropout": 0.1,
+        "model.num_layers": 3,
+        "model.num_heads": 8,
+        "model.dropout": 0.3,
         # "model.special_weight": 5.0,
         # "optimizer": "SGD",
-        # "scheduler": "StepLR",
+        "scheduler": "cosine_with_warmup",
         # "scheduler.step_size": 15,
         # "scheduler.gamma": 0.1,
     },
@@ -190,10 +205,6 @@ if os.path.exists(model_path):
     print(f"加载已保存的模型: {model_path}")
 else:
     print("未找到已保存的模型，从头开始训练")
-
-# 训练模型
-num_epochs = 100  # 设置一个较大的初始值
-save_interval = 10  # 每10轮保存一次模型
 
 
 def calculate_accuracy(outputs, labels, threshold=0.5):
@@ -226,7 +237,9 @@ from sklearn.metrics import f1_score
 def calculate_f1(outputs, labels, threshold=0.5):
     probs = torch.sigmoid(outputs).cpu().detach().numpy()
     preds = (probs >= threshold).astype(int)
-    return f1_score(labels.cpu().detach().numpy().flatten(), preds.flatten(), average='weighted')
+    return f1_score(
+        labels.cpu().detach().numpy().flatten(), preds.flatten(), average="weighted"
+    )
 
 
 def calculate_eval_f1(model, test_loader):
@@ -239,11 +252,40 @@ def calculate_eval_f1(model, test_loader):
     return f1 / len(test_loader)
 
 
+def precision_at_k(preds, targets, k, threshold=0.5):
+    """preds 和 targets 形状都是 (B, num_labels)"""
+    preds = torch.sigmoid(preds).cpu().detach()
+    preds = (preds >= threshold).float()
+    topk_preds = torch.topk(preds, k=k, dim=1).indices
+    correct = 0
+    for i in range(preds.size(0)):
+        correct += len(
+            set(topk_preds[i].tolist()) & set(torch.where(targets[i] == 1)[0].tolist())
+        )
+    return correct / (preds.size(0) * k)
+
+
+def recall_at_k(preds, targets, k, threshold=0.5):
+    """preds 和 targets 形状都是 (B, num_labels)"""
+    preds = torch.sigmoid(preds).cpu().detach()
+    preds = (preds >= threshold).float()
+    total_recall = 0
+    for i in range(preds.size(0)):
+        true_labels = set(torch.where(targets[i] == 1)[0].tolist())
+        if len(true_labels) == 0:
+            continue
+        topk_preds = set(torch.topk(preds[i], k=k).indices.tolist())
+        total_recall += len(true_labels & topk_preds) / len(true_labels)
+    return total_recall / preds.size(0)
+
+
 for epoch in tqdm(range(num_epochs)):
     model.train()
     epoch_loss = 0
     train_acc = 0
     train_f1 = 0
+    precision_at_5 = 0
+    recall_at_5 = 0
     high_error_samples = []  # 存储高误差样本
 
     for inputs, labels, metadata in train_loader:
@@ -293,20 +335,25 @@ for epoch in tqdm(range(num_epochs)):
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+        scheduler.step()
         epoch_loss += loss.item()
         train_acc += calculate_accuracy(outputs, labels)
         train_f1 += calculate_f1(outputs, labels)
+        precision_at_5 += precision_at_k(outputs, labels, k=5)
+        recall_at_5 += recall_at_k(outputs, labels, k=5)
         # 梯度裁剪，防止梯度爆炸
         torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 
     epoch_loss /= len(train_loader)
     train_acc /= len(train_loader)
     train_f1 /= len(train_loader)
+    precision_at_5 /= len(train_loader)
+    recall_at_5 /= len(train_loader)
     test_acc = evaluate(model, test_loader)
     test_f1 = calculate_eval_f1(model, test_loader)
 
     # scheduler.step()
-    scheduler.step(epoch_loss)
+    # scheduler.step(epoch_loss)
 
     run.log(
         {
@@ -316,6 +363,9 @@ for epoch in tqdm(range(num_epochs)):
             "test_acc": test_acc,
             "train_f1": train_f1,
             "test_f1": test_f1,
+            "learning_rate": scheduler.get_last_lr()[0],
+            "precision@5": precision_at_5,
+            "recall@5": recall_at_5,
         },
         step=epoch,
     )
@@ -330,7 +380,7 @@ for epoch in tqdm(range(num_epochs)):
 
     # 打印高误差样本
     print(
-        f"\nEpoch [{epoch + 1}/{num_epochs}], Loss: {epoch_loss:.4f}, Train Acc: {train_acc:.4f}, Test Acc: {test_acc:.4f}, Train F1: {train_f1:.4f}, Test F1: {test_f1:.4f}"
+        f"\nEpoch [{epoch + 1}/{num_epochs}], Loss: {epoch_loss:.4f}, Train Acc: {train_acc:.4f}, Test Acc: {test_acc:.4f}, Train F1: {train_f1:.4f}, Test F1: {test_f1:.4f}, Learning Rate: {scheduler.get_last_lr()[0]}"
     )
 
     # 保存模型

@@ -15,6 +15,7 @@ from collections import defaultdict
 from torch.utils.data import DataLoader
 from torch.nn.utils.rnn import pad_sequence
 from models.Transformer2 import TransformerWithHead
+
 # from models.LSTM import LSTMWithAttention
 from consts import difficulty_mapping, max_tags, special_indices
 from sklearn.metrics import f1_score
@@ -74,7 +75,9 @@ def process_new_data():
     print(f"📁 加载了 {len(json_data_list)} 个新数据样本")
     return json_data_list
 
+
 fixed_note_length = 1393
+
 
 def collate_fn(batch):
     data, labels, metadata = zip(*batch)
@@ -91,6 +94,7 @@ def collate_fn(batch):
     labels_padded = torch.stack(labels)
 
     return data_padded, labels_padded, metadata
+
 
 def evaluate(model, data_loader):
     """评估模型表现"""
@@ -160,7 +164,7 @@ def main():
     # 2. 处理新数据
     data_list = process_new_data()
     note_dataset = ChartDataset(data_list)
-    
+
     max_note_length = max(len(sequence) for sequence in note_dataset.data)
     print(f"数据集中最大 note 数量: {max_note_length}")
 

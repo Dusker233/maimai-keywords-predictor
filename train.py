@@ -101,6 +101,7 @@ print(f"数据集中最大 note 数量: {max_note_length}")
 # fixed_note_length = max_note_length + 200
 fixed_note_length = 1600
 
+
 def collate_fn(batch):
     data, labels, metadata = zip(*batch)
 
@@ -222,7 +223,9 @@ from sklearn.metrics import f1_score
 def calculate_f1(outputs, labels, threshold=0.5):
     probs = torch.sigmoid(outputs).cpu().detach().numpy()
     preds = (probs >= threshold).astype(int)
-    return f1_score(labels.cpu().detach().numpy().flatten(), preds.flatten(), average='weighted')
+    return f1_score(
+        labels.cpu().detach().numpy().flatten(), preds.flatten(), average="weighted"
+    )
 
 
 def calculate_eval_f1(model, test_loader):
@@ -323,7 +326,7 @@ for epoch in tqdm(range(num_epochs)):
     swanlab_table.add(headers=columns, rows=high_error_samples)
     run.log({"high_error_samples": wandb_table}, step=epoch)
     swanlab.log({"high_error_samples": swanlab_table})
-    
+
     # 打印高误差样本
     print(
         f"\nEpoch [{epoch + 1}/{num_epochs}], Loss: {epoch_loss:.4f}, Train Acc: {train_acc:.4f}, Test Acc: {test_acc:.4f}, Train F1: {train_f1:.4f}, Test F1: {test_f1:.4f}"
