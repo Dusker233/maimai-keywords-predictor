@@ -121,10 +121,10 @@ def collate_fn(batch):
 
 # 创建训练和测试数据加载器
 train_loader = DataLoader(
-    train_dataset, batch_size=32, shuffle=True, collate_fn=collate_fn
+    train_dataset, batch_size=64, shuffle=True, collate_fn=collate_fn
 )
 test_loader = DataLoader(
-    test_dataset, batch_size=32, shuffle=False, collate_fn=collate_fn
+    test_dataset, batch_size=64, shuffle=True, collate_fn=collate_fn
 )
 
 model = BiLSTMWithAttention(
@@ -133,12 +133,12 @@ model = BiLSTMWithAttention(
     num_layers=3,
     output_size=max_tags + 1,
     special_indices=special_indices,
-    special_weight=10.0,
+    special_weight=5.0,
 ).cuda()
 
 # 定义损失函数和优化器
 criterion = nn.BCEWithLogitsLoss()
-optimizer = optim.AdamW(model.parameters(), lr=1e-4)
+optimizer = optim.AdamW(model.parameters(), lr=5e-5, weight_decay=1e-4)
 scheduler = optim.lr_scheduler.ReduceLROnPlateau(
     optimizer, "min", patience=3, factor=0.5
 )
@@ -158,9 +158,10 @@ run = wandb.init(
     entity="dusker233-southeastern-university",
     project="maimai-chart-keyword-predictor",
     config={
-        "learning_rate": 1e-4,
+        "learning_rate": 5e-5,
+        "weight_decay": 1e-4,
         # "momentum": 0.9,
-        "batch_size": 32,
+        "batch_size": 64,
         "epochs": 200,
         # "early_stopping_patience": 10,
         # "target_loss": 0.01,
@@ -168,7 +169,7 @@ run = wandb.init(
         "optimizer": "AdamW",
         "model.hidden_size": 256,
         "model.num_layers": 3,
-        "model.special_weight": 10.0,
+        "model.special_weight": 5.0,
         # "optimizer": "SGD",
         # "scheduler": "StepLR",
         # "scheduler.step_size": 15,
