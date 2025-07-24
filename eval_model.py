@@ -72,7 +72,9 @@ def process_new_data():
     print(f"📁 加载了 {len(json_data_list)} 个新数据样本")
     return json_data_list
 
+
 fixed_note_length = 2000
+
 
 def collate_fn(batch):
     data, labels, metadata = zip(*batch)
@@ -89,6 +91,7 @@ def collate_fn(batch):
     labels_padded = torch.stack(labels)
 
     return data_padded, labels_padded, metadata
+
 
 def evaluate(model, data_loader):
     """评估模型表现"""
