@@ -3,7 +3,7 @@ import json
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import DataLoader, random_split
+from torch.utils.data import DataLoader, random_split, Subset
 from torch.nn.utils.rnn import pad_sequence
 from collections import defaultdict
 from consts import difficulty_mapping, max_tags, special_indices
@@ -14,6 +14,8 @@ from utils.chartDataset import ChartDataset
 from utils.focalLoss import MultiLabelFocalLossWithLogits, compute_samplewise_focal_loss
 import wandb
 import swanlab
+from sklearn.model_selection import KFold
+from transformers import get_cosine_schedule_with_warmup
 
 swanlab.sync_wandb()
 
@@ -91,9 +93,11 @@ with open(csv_file_path, "r", encoding="utf-8") as f:
 print(f"读取了 {len(json_data_list)} 个 JSON 文件的数据")
 
 note_dataset = ChartDataset(json_data_list)
-train_size = int(len(note_dataset) * 0.9)
-test_size = len(note_dataset) - train_size
-train_dataset, test_dataset = random_split(note_dataset, [train_size, test_size])
+kf = KFold(n_splits=10, shuffle=True, random_state=42)
+splits = list(kf.split(note_dataset))
+# train_size = int(len(note_dataset) * 0.9)
+# test_size = len(note_dataset) - train_size
+# train_dataset, test_dataset = random_split(note_dataset, [train_size, test_size])
 
 max_note_length = max(len(sequence) for sequence in note_dataset.data)
 print(f"数据集中最大 note 数量: {max_note_length}")
@@ -120,46 +124,32 @@ def collate_fn(batch):
 
 
 # 创建训练和测试数据加载器
-train_loader = DataLoader(
-    train_dataset, batch_size=64, shuffle=True, collate_fn=collate_fn
-)
-test_loader = DataLoader(
-    test_dataset, batch_size=64, shuffle=True, collate_fn=collate_fn
-)
-
-
-model = TransformerWithHead(
-    input_dim=18,
-    d_model=128,
-    num_heads=8,
-    num_layers=3,
-    num_labels=max_tags + 1,  # 根据你的数据
-    max_len=fixed_note_length,
-    dropout=0.3,
-).cuda()
-
-# 训练模型
-num_epochs = 100  # 设置一个较大的初始值
-save_interval = 10  # 每10轮保存一次模型
-
-# 定义损失函数和优化器
-criterion = nn.BCEWithLogitsLoss()
-# criterion = MultiLabelFocalLossWithLogits()
-optimizer = optim.AdamW(model.parameters(), lr=7e-5, weight_decay=1e-4)
-# scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-#     optimizer, "min", patience=3, factor=0.5
+# train_loader = DataLoader(
+#     train_dataset, batch_size=64, shuffle=True, collate_fn=collate_fn
+# )
+# test_loader = DataLoader(
+#     test_dataset, batch_size=64, shuffle=True, collate_fn=collate_fn
 # )
 
-# 预设参数
-total_steps = len(train_loader) * num_epochs
-warmup_steps = int(total_steps * 0.1)  # 通常是 10%
+hidden_dim = 32
+num_heads = 4
+num_layers = 2
+dropout = 0.3
+# 训练模型
+num_epochs = 150  # 设置一个较大的初始值
+save_interval = 10  # 每10轮保存一次模型
+lr = 2e-5
+weight_decay = 5e-4
 
-# 调度器
-from transformers import get_cosine_schedule_with_warmup
-
-scheduler = get_cosine_schedule_with_warmup(
-    optimizer, num_warmup_steps=warmup_steps, num_training_steps=total_steps
-)
+model_tmp = TransformerWithHead(
+    input_dim=18,
+    d_model=hidden_dim,
+    num_heads=num_heads,
+    num_layers=num_layers,
+    num_labels=max_tags + 1,  # 根据你的数据
+    max_len=fixed_note_length,
+    dropout=dropout,
+).cuda()
 
 # 定义早停机制
 early_stopping_patience = 10
@@ -173,19 +163,19 @@ run = wandb.init(
     entity="dusker233-southeastern-university",
     project="maimai-chart-keyword-predictor",
     config={
-        "learning_rate": 7e-5,
-        "weight_decay": 1e-4,
+        "learning_rate": lr,
+        "weight_decay": weight_decay,
         # "momentum": 0.9,
         "batch_size": 64,
-        "epochs": 100,
+        "epochs": num_epochs,
         # "early_stopping_patience": 10,
         # "target_loss": 0.01,
         "model_name": "Transformer",
-        "optimizer": "AdamW",
-        "model.hidden_size": 128,
-        "model.num_layers": 3,
-        "model.num_heads": 8,
-        "model.dropout": 0.3,
+        "optimizer": "MultiLabelFocalLoss",
+        "model.hidden_size": hidden_dim,
+        "model.num_layers": num_layers,
+        "model.num_heads": num_heads,
+        "model.dropout": dropout,
         # "model.special_weight": 5.0,
         # "optimizer": "SGD",
         "scheduler": "cosine_with_warmup",
@@ -193,8 +183,14 @@ run = wandb.init(
         # "scheduler.gamma": 0.1,
     },
 )
-run.watch(model, log_freq=1)
 run_id = run.id
+
+from torchinfo import summary
+summary(
+    model_tmp,
+    input_size=(64, fixed_note_length, 18),
+    dtypes=[torch.float],
+)
 
 # 检查是否存在已保存的模型
 if not os.path.exists(f"./trained_models/{run_id}"):
@@ -279,137 +275,169 @@ def recall_at_k(preds, targets, k, threshold=0.5):
     return total_recall / preds.size(0)
 
 
-for epoch in tqdm(range(num_epochs)):
-    model.train()
-    epoch_loss = 0
-    train_acc = 0
-    train_f1 = 0
-    precision_at_5 = 0
-    recall_at_5 = 0
-    high_error_samples = []  # 存储高误差样本
+for fold_idx, (train_idx, test_idx) in enumerate(splits):
+    run.name = f"fold-{fold_idx}"
+    train_subset = Subset(note_dataset, train_idx)
+    test_subset = Subset(note_dataset, test_idx)
 
-    for inputs, labels, metadata in train_loader:
-        inputs, labels = inputs.cuda(), labels.cuda()
-        outputs = model(inputs)
-        loss = criterion(outputs, labels)
+    train_loader = DataLoader(train_subset, batch_size=64, shuffle=True, collate_fn=collate_fn)
+    test_loader = DataLoader(test_subset, batch_size=64, shuffle=True, collate_fn=collate_fn) 
+    model = TransformerWithHead(
+        input_dim=18,
+        d_model=hidden_dim,
+        num_heads=num_heads,
+        num_layers=num_layers,
+        num_labels=max_tags + 1,  # 根据你的数据
+        max_len=fixed_note_length,
+        dropout=dropout,
+    ).cuda()
 
-        raw_losses = torch.nn.functional.binary_cross_entropy_with_logits(
-            outputs,
-            labels,
-            reduction="none",
-        )
-        batch_losses = raw_losses.sum(dim=1)
 
-        threshold = batch_losses.mean()
-        high_error_mask = batch_losses >= threshold
-        high_error_indices = high_error_mask.nonzero().flatten().tolist()
+    # 定义损失函数和优化器
+    # criterion = nn.BCEWithLogitsLoss()
+    criterion = MultiLabelFocalLossWithLogits()
+    optimizer = optim.AdamW(model.parameters(), lr=lr, weight_decay=weight_decay)
+    # scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+    #     optimizer, "min", patience=3, factor=0.5
+    # )
 
-        for idx in high_error_indices:
-            probbs = torch.sigmoid(outputs[idx])
-            pred = (probbs >= 0.5).float()
-            high_error_samples.append(
-                [
-                    metadata[idx]["song_id"],
-                    metadata[idx]["level_index"],
-                    batch_losses[idx].item(),
-                    pred.tolist(),
-                    labels[idx].tolist(),
-                ]
-            )
-        # 使用 wandb 可视化每个标签的损失分布
-        # for tag_idx in range(25):
-        #     run.log(
-        #         {
-        #             f"loss_tag_{tag_idx}": wandb.Histogram(
-        #                 raw_losses[:, tag_idx].detach().cpu().numpy()
-        #             )
-        #         },
-        #         step=epoch,
-        #     )
-        # plt.figure(figsize=(10, 6))
-        # sns.heatmap(raw_losses.cpu().detach().numpy(), cmap="viridis")
-        # run.log({"loss_heatmap": wandb.Image(plt)}, step=epoch)
-        # plt.close()
-
-        # 反向传播和优化
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-        scheduler.step()
-        epoch_loss += loss.item()
-        train_acc += calculate_accuracy(outputs, labels)
-        train_f1 += calculate_f1(outputs, labels)
-        precision_at_5 += precision_at_k(outputs, labels, k=5)
-        recall_at_5 += recall_at_k(outputs, labels, k=5)
+    scheduler = get_cosine_schedule_with_warmup(
+        optimizer, 
+        num_warmup_steps=int(len(train_loader) * num_epochs * 0.1),
+        num_training_steps=len(train_loader) * num_epochs
+    )
+    for epoch in tqdm(range(num_epochs)):
+        model.train()
+        epoch_loss = 0
+        train_acc = 0
+        train_f1 = 0
+        precision_at_5 = 0
+        recall_at_5 = 0
         # 梯度裁剪，防止梯度爆炸
         torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+        high_error_samples = []  # 存储高误差样本
 
-    epoch_loss /= len(train_loader)
-    train_acc /= len(train_loader)
-    train_f1 /= len(train_loader)
-    precision_at_5 /= len(train_loader)
-    recall_at_5 /= len(train_loader)
-    test_acc = evaluate(model, test_loader)
-    test_f1 = calculate_eval_f1(model, test_loader)
+        for inputs, labels, metadata in train_loader:
+            inputs, labels = inputs.cuda(), labels.cuda()
+            outputs = model(inputs)
+            loss = criterion(outputs, labels)
 
-    # scheduler.step()
-    # scheduler.step(epoch_loss)
+            # raw_losses = torch.nn.functional.binary_cross_entropy_with_logits(
+            #     outputs,
+            #     labels,
+            #     reduction="none",
+            # )
+            raw_losses = compute_samplewise_focal_loss(outputs, labels)
+            batch_losses = raw_losses.sum(dim=1)
 
-    run.log(
-        {
-            "epoch": epoch,
-            "train_loss": epoch_loss,
-            "train_acc": train_acc,
-            "test_acc": test_acc,
-            "train_f1": train_f1,
-            "test_f1": test_f1,
-            "learning_rate": scheduler.get_last_lr()[0],
-            "precision@5": precision_at_5,
-            "recall@5": recall_at_5,
-        },
-        step=epoch,
-    )
-    high_error_samples = sorted(high_error_samples, key=lambda x: x[2], reverse=True)
-    high_error_samples = high_error_samples[:5]
-    columns = ["song_id", "level_index", "loss", "prediction", "label"]
-    wandb_table = wandb.Table(columns=columns, data=high_error_samples)
-    swanlab_table = swanlab.echarts.Table()
-    swanlab_table.add(headers=columns, rows=high_error_samples)
-    run.log({"high_error_samples": wandb_table}, step=epoch)
-    swanlab.log({"high_error_samples": swanlab_table})
+            threshold = batch_losses.mean()
+            high_error_mask = batch_losses >= threshold
+            high_error_indices = high_error_mask.nonzero().flatten().tolist()
 
-    # 打印高误差样本
-    print(
-        f"\nEpoch [{epoch + 1}/{num_epochs}], Loss: {epoch_loss:.4f}, Train Acc: {train_acc:.4f}, Test Acc: {test_acc:.4f}, Train F1: {train_f1:.4f}, Test F1: {test_f1:.4f}, Learning Rate: {scheduler.get_last_lr()[0]}"
-    )
+            for idx in high_error_indices:
+                probbs = torch.sigmoid(outputs[idx])
+                pred = (probbs >= 0.5).float()
+                high_error_samples.append(
+                    [
+                        metadata[idx]["song_id"],
+                        metadata[idx]["level_index"],
+                        batch_losses[idx].item(),
+                        pred.tolist(),
+                        labels[idx].tolist(),
+                    ]
+                )
+            # 使用 wandb 可视化每个标签的损失分布
+            # for tag_idx in range(25):
+            #     run.log(
+            #         {
+            #             f"loss_tag_{tag_idx}": wandb.Histogram(
+            #                 raw_losses[:, tag_idx].detach().cpu().numpy()
+            #             )
+            #         },
+            #         step=epoch,
+            #     )
+            # plt.figure(figsize=(10, 6))
+            # sns.heatmap(raw_losses.cpu().detach().numpy(), cmap="viridis")
+            # run.log({"loss_heatmap": wandb.Image(plt)}, step=epoch)
+            # plt.close()
 
-    # 保存模型
-    if (epoch + 1) % save_interval == 0:
-        model_save_path = os.path.join(
-            "trained_models", f"{run_id}", f"model_epoch_{epoch+1}.pth"
+            # 反向传播和优化
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            scheduler.step()
+            epoch_loss += loss.item()
+            train_acc += calculate_accuracy(outputs, labels)
+            train_f1 += calculate_f1(outputs, labels)
+            precision_at_5 += precision_at_k(outputs, labels, k=5)
+            recall_at_5 += recall_at_k(outputs, labels, k=5)
+
+        epoch_loss /= len(train_loader)
+        train_acc /= len(train_loader)
+        train_f1 /= len(train_loader)
+        precision_at_5 /= len(train_loader)
+        recall_at_5 /= len(train_loader)
+        test_acc = evaluate(model, test_loader)
+        test_f1 = calculate_eval_f1(model, test_loader)
+
+        # scheduler.step()
+        # scheduler.step(epoch_loss)
+
+        run.log(
+            {
+                # "epoch": epoch,
+                "train_loss": epoch_loss,
+                "train_acc": train_acc,
+                "test_acc": test_acc,
+                "train_f1": train_f1,
+                "test_f1": test_f1,
+                "learning_rate": scheduler.get_last_lr()[0],
+                "precision@5": precision_at_5,
+                "recall@5": recall_at_5,
+            },
+            step=epoch,
         )
-        torch.save(model.state_dict(), model_save_path)
-        print(f"模型已保存: {model_save_path}")
+        high_error_samples = sorted(high_error_samples, key=lambda x: x[2], reverse=True)
+        high_error_samples = high_error_samples[:5]
+        columns = ["song_id", "level_index", "loss", "prediction", "label"]
+        wandb_table = wandb.Table(columns=columns, data=high_error_samples)
+        swanlab_table = swanlab.echarts.Table()
+        swanlab_table.add(headers=columns, rows=high_error_samples)
+        run.log({"high_error_samples": wandb_table}, step=epoch)
+        swanlab.log({"high_error_samples": swanlab_table})
 
-    # 检查当前损失值并与 best 比对
-    if epoch_loss < best_loss:
-        best_loss = epoch_loss
-        epochs_no_improve = 0
-        # 保存最好的模型
-        best_model_path = f"trained_models/{run_id}/best_model.pth"
-        torch.save(model.state_dict(), best_model_path)
-        print(f"最好的模型已保存: {best_model_path}")
-    else:
-        epochs_no_improve += 1
+        # 打印高误差样本
+        print(
+            f"\nEpoch [{epoch + 1}/{num_epochs}], Loss: {epoch_loss:.4f}, Train Acc: {train_acc:.4f}, Test Acc: {test_acc:.4f}, Train F1: {train_f1:.4f}, Test F1: {test_f1:.4f}, Learning Rate: {scheduler.get_last_lr()[0]}"
+        )
 
-    # if epochs_no_improve >= early_stopping_patience:
-    #     print("早停机制触发，停止训练")
-    #     break
+        # 保存模型
+        if (epoch + 1) % save_interval == 0:
+            model_save_path = os.path.join(
+                "trained_models", f"{run_id}", f"model_epoch_{epoch+1}.pth"
+            )
+            torch.save(model.state_dict(), model_save_path)
+            print(f"模型已保存: {model_save_path}")
 
-    # 检查是否达到目标损失值
-    if epoch_loss <= target_loss:
-        print(f"达到目标损失值 {target_loss}，停止训练")
-        break
+        # 检查当前损失值并与 best 比对
+        if epoch_loss < best_loss:
+            best_loss = epoch_loss
+            epochs_no_improve = 0
+            # 保存最好的模型
+            best_model_path = f"trained_models/{run_id}/best_model.pth"
+            torch.save(model.state_dict(), best_model_path)
+            print(f"最好的模型已保存: {best_model_path}")
+        else:
+            epochs_no_improve += 1
+
+        # if epochs_no_improve >= early_stopping_patience:
+        #     print("早停机制触发，停止训练")
+        #     break
+
+        # 检查是否达到目标损失值
+        if epoch_loss <= target_loss:
+            print(f"达到目标损失值 {target_loss}，停止训练")
+            break
 
 run.finish()
 print("训练完成")
